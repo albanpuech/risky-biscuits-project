@@ -62,8 +62,8 @@ We first looked at the top 10 best rated beers in the US. [to be continued]
 
 
 
-[1]
-[2]
+[1] \
+[2] \
 [3] World Map of the Köppen-Geiger climate classification updated
 
 
