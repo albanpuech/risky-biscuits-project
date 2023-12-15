@@ -1,87 +1,70 @@
-# Seeing the world through the lens of beer reviews
+# Pints and Patterns: How Climate Shapes U.S. Beer Ratings
 
-## Abstract
+## Introduction
 
-Beers are produced and consumed in every part of the world. One can thus wonder how beers around the world are perceived by different cultures. The interest of this project is to look into how beers from each country of production are judged and how specific countries judge others. As a side note, we will finally answer an age-old question : Are German beers actually good ?
+🍻 Welcome to "Pints and Patterns: How Climate Shapes U.S. Beer Ratings"!
 
-On the one hand, we want to explore how a country’s beers are perceived both quantitatively and qualitatively. On the other hand, we will analyze the users’ ratings and look for significant patterns in how distinct countries rate other countries. For both of these analyses, we will dissect both the ratings and reviews to understand the feelings of the users. These findings will also be mapped to their climate to see if there is a correlation between a countries’ beer rating and the climate of said country. 
+Get ready for a tasty and refreshing adventure! In this project, we are going to pop the cap off the worlds of beers and climate! 
+Who hasn't dreamed of a cold beer on a warm summer's evening? Does a chilly breeze call for a stronger brew? These questions made us wonder: Perhaps our beer tastes change with the climate we're in!
+We will take you on a bubbly journey to explore how the sunny beaches, snowy mountains, and everything in between across the U.S. influence the way Americans rate their favorite beers!
 
-## Research questions
+The questions we will be answering include:
+- Is there a correlation between climate and the overall beer reviews?
+- Does climate influence people's demand for taste, palate and aroma?
+- How does beer ratings change across seasons in the different climate areas?
 
-The goal of this project is to answer the following questions:
+## Dataset
+### Reviews
+The dataset we will be using contains x reviews from two major beer ratings platform, namely, Beer Advocate and Beer Review.
+These reviews were posted by more than x unique american inhabitants, on a time period spanning the years x to x. The dataset is available at [1].
 
-1) Which country has the best beers in the world?
-2) Which beers have more ratings in each country? Which beers are the best rated in each country?
-3) What adjectives are most commonly used in the reviews to describe beers in different countries? Are there some recurrent adjectives when looking at the totality of the considered countries?
-4) What is the correlation between a country’s climate and the beer it produced? Is the climate influencing the taste and the look of the beer? 
-5) Does the reviewer’s nationality influence the rating a beer will receive? How is a target country differently evaluated by people from other countries? 
-6) What is the cross-correlation between the country of the reviewer and the country of the beer? Does the country of origin of a user have an influence on their taste in beer?
+### Climate
+We use the Köppen climate classification data of the US states. The dataset was obtained from [2]. This climate classification is one of the most widely used ones.
 
-## Additional datasets
+It divides climates into five groups, which defines the first letter of the names of the climate classification groups. These are:
+- A (tropical)
+- B (arid)
+- C (temperate)
+- D (continental)
+- E (polar)
 
-In addition to the BeerAdvocate and RateBeer datasets, we will use the following datasets:
+All climates except for those in the E group are assigned a seasonal precipitation subgroup that defines the second letter, while the third one indicates the temperature subgroup. All in all, we obtain the following categories:
 
-- [Climate data](https://weatherandclimate.com/countries): this dataset is composed of the Köppen climate classification and average temperature for countries worldwide. We will use it to find out if there is a correlation between the climate zone and the beer ratings.
+| Köppen climate classification scheme | 1st | 2nd                 | 3rd              |
+|--------------------------------------|-----|----------------------|------------------|
+| **A (Tropical)**                     |     | f (Rainforest)       |                  |
+|                                      |     | m (Monsoon)          |                  |
+|                                      |     | w (Savanna, dry winter) |              |
+|                                      |     | s (Savanna, dry summer) |              |
+| **B (Dry)**                          |     | W (Arid Desert)      | h (Hot)          |
+|                                      |     | S (Semi-Arid or steppe) | k (Cold)      |
+| **C (Temperate)**                    |     | w (Dry winter)       | a (Hot summer)   |
+|                                      |     | f (No dry season)    | b (Warm summer)  |
+|                                      |     | s (Dry summer)       | c (Cold summer)  |
+| **D (Continental)**                  |     | w (Dry winter)       | a (Hot summer)   |
+|                                      |     | f (No dry season)    | b (Warm summer)  |
+|                                      |     | s (Dry summer)       | c (Cold summer)  |
+|                                      |     |                      | d (Very cold winter) |
+| **E (Polar)**                        |     | T (Tundra)           |                  |
+|                                      |     | F (Ice cap)          |                  |
 
-- [SpaCy](https://spacy.io/usage/models): a Python library for advanced Natural Language Processing. We will use their model `en_core_web_sm` to find adjectives in the text reviews in order to see how users qualitatively perceive beers from country to country.
 
-- [United States Census Bureau](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html): this dataset contains a cartographic boundary files of the 50 states of the United States plus 6 territories. We use the file `cb_2018_us_state_500k` to plot the map of the United States using the `geopandas` library. We kept only the states as we do not have any data for the territories.
+## How does the climate affect the average rating of the US top 10 ranking?
 
-## Methods
+Beer tastes surely are very subjective. Even among groups of close friends,Starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torned apart after childrens revealed their "beer orientation" to their parents.
 
-In order to answer the research questions, we will use the following pipeline:
+Motivated by those stories, and aware of the power that was into our hands with our best data analysis tools, we realized the impact that we could have on resolving one of today's major challenge: avoiding stanford graduates getting disavowed by their parents after they come back with their beer tastes totally changed by the warm climate of the bay area, that often pushes them to switch to lighter beers to go well with their weekly barbecues.
 
-- Making of useable dataframes:
-
-    - Remove the beers that have less than 10 reviews to have enough data points and make significant conclusions
-    - Depending on the part of the analysis, remove all reviews for which the beer’s origin has less than 10 beers or if the user has rated less than 10 beers for validity 
-    - If in the analysis 2, we first select one country as the source and keep only reviews from users of that country
+We first looked at the top 10 best rated beers in the US. [to be continued]
 
 
-- Compute the average ratings (according to the 5 different scores: Overall, Taste, Aroma, Palate and Appearance, or to the average of these) of the beers of each country kept in the analysis.
-- For these results check their statistical significance and if they are, plot them on a world map for visual comparison
-- Furthermore, for each country look at the most common adjectives used to describe their beers and use wordclouds to display them, can also compute an average positivity using Spacy to see if it matches with the average ratings
-- If time allows it, we will also look at the climate of the country to look for a correlation between the climate and the ratings of a country’s beer. If so, check it’s statistical significance. 
+## How does the climate affect the average rating of the US top 10 ranking?
 
-## Proposed timeline
 
-<ol>
-<li> Data cleaning and making adequate dataframes for the different analyses. </li>
-<li> Go through the beer rating dataset and make different visualizations of :
-    <ol type="a">
-    <li>The average ratings received per country (looking into the different sub-categories).</li>
-    <li>The best rated beers of each country.</li>
-    <li>Any correlations between the two previous findings.</li>
-    </ol>
-</li>
-<li>
-Find the most used adjectives from the textual reviews for each country. Make a word cloud visualization of these with a scale of writing to show the predominance of each used adjective in the ratings given to each country. Try to look at the positivity of these words and see if any correlation with the ratings appears.
-</li>
-<li>Group the countries per climate and make visualizations of:
-    <ol type="a">
-    <li>the average rating of beers per climate group</li>
-    <li>the best rated beer per climate group</li>
-    <li>the most used adjectives per climate group</li>
-    <li>cross-correlation between the previous findings</li>
-    </ol>
-</li>
-<li> Observe the reviews and ratings given by users of a certain nationality. Make visualizations of:
-    <ol type="a">
-    <li>the average rating given per country</li>
-    <li>the best rated beers per users in a certain country</li>
-    <li>any correlations between the two previous findings</li>
-    </ol>
-</li>
-<li> For each country look at how users from the rest of the world rate its beers. This is done by aggregating the users in their respective country in order to be able again to plot on a map the results. Look for correlation between the ratings of the beers of the users’ origin country by comparison with the ones of the target and how they rate the beers of the target country. </li>
-<li> Create an interactive map to visualize our findings. </li>
-</ol>
 
-## Organization within the team
+[1]
+[2]
+[3] World Map of the Köppen-Geiger climate classification updated
 
-We intend to separate the work as follows:
 
-- Alban: How to be able to select a target country with interactive maps. Will also work on building the website.
-- Barbara: Climate analysis and qualitative analysis of the textual reviews
-- Marin: Analysis of the ratings of the beers of each country, help with the textual analysis.
-- Emilie: Analysis of the reviews from users of the same country. Compute correlations with the ratings of the beers of their country.
-- Meline: Analysis of the reviews from users of different countries and how they rate the beers of the target country. Look at which are the best beers after selecting one country or group of users.
+
