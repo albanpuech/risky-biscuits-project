@@ -15,8 +15,8 @@ The questions we will be answering include:
 
 ## Dataset
 ### Reviews
-The dataset we will be using contains x reviews from two major beer ratings platform, namely, Beer Advocate and Beer Review.
-These reviews were posted by more than x unique american inhabitants, on a time period spanning the years x to x. The dataset is available at [1].
+The dataset we will be using contains x reviews from two major beer ratings platforms, namely, Beer Advocate and Beer Review.
+These reviews were posted by more than x unique American inhabitants, on a time period spanning the years x to x. The dataset is available at [1].
 
 ### Climate
 We use the Köppen climate classification data of the US states. The dataset was obtained from [2]. This climate classification is one of the most widely used ones.
@@ -51,9 +51,9 @@ All climates except for those in the E group are assigned a seasonal precipitati
 
 ## How does the climate affect the average rating of the US top 10 ranking?
 
-Beer tastes surely are very subjective. Even among groups of close friends,Starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torned apart after childrens revealed their "beer orientation" to their parents.
+Beer tastes surely are very subjective. Even among groups of close friends, starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torn apart after children revealed their "beer orientation" to their parents.
 
-Motivated by those stories, and aware of the power that was into our hands with our best data analysis tools, we realized the impact that we could have on resolving one of today's major challenge: avoiding stanford graduates getting disavowed by their parents after they come back with their beer tastes totally changed by the warm climate of the bay area, that often pushes them to switch to lighter beers to go well with their weekly barbecues.
+Motivated by those stories, and aware of the power that was into our hands with our best data analysis tools, we realized the impact that we could have on resolving one of today's major challenge: avoiding Stanford graduates getting disavowed by their parents after they come back with their beer tastes totally changed by the warm climate of the Bay Area, that often pushes them to switch to lighter beers to go well with their weekly barbecues.
 
 We first looked at the top 10 best rated beers in the US. [to be continued]
 
@@ -65,6 +65,5 @@ We first looked at the top 10 best rated beers in the US. [to be continued]
 [1] \
 [2] \
 [3] World Map of the Köppen-Geiger climate classification updated
-
 
 
