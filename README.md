@@ -49,7 +49,7 @@ All climates except for those in the E group are assigned a seasonal precipitati
 |                                      |     | F (Ice cap)          |                  |
 
 
-## How does the climate affect the average rating of the US top 10 ranking?
+## How does the average ratings of the US TOP 10 beers change across the climate regions?
 
 Beer tastes surely are very subjective. Even among groups of close friends, starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torn apart after children revealed their "beer orientation" to their parents.
 
@@ -58,7 +58,17 @@ Motivated by those stories, and aware of the power that was into our hands with 
 We first looked at the top 10 best rated beers in the US. [to be continued]
 
 
-## How does the climate affect the average rating of the US top 10 ranking?
+## Is there a correlation between climate and the average beer scores? (Taste, Aroma, Palate, Appearance)
+
+
+## How does the favourite styles of beer change across climate regions?
+
+## How does the overall review sentiment change across climate regions?
+
+
+
+
+
 
 
 
