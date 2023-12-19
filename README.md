@@ -52,7 +52,7 @@ All climates except for those in the E group are assigned a seasonal precipitati
 
 </div>
 
-## How does the average ratings of the US TOP 10 beers change across the climate regions?
+## How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
 Beer tastes surely are very subjective. Even among groups of close friends, starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torn apart after children revealed their "beer orientation" to their parents.
 
@@ -72,9 +72,9 @@ We first looked at the top 5 most rated beers in the US:
 
 </div>
 
-Fun Fact: With two beers in the 5 most reviewed beers in the US, belgian beers seem to be quite popular in the the US!
+Fun Fact: With two beers in the 5 most reviewed beers in the US, Belgian beers seem to be quite popular in the US!
 
-These beers are the most reviewed ones, but they don't seem to have really high scores! In fact, we can see that beers with a large average review seem to be the ones with less reviews:
+These beers are the most reviewed ones, but they don't seem to have really high scores! In fact, we can see that beers with a large average review seem to be the ones with fewer reviews:
 
 <p align="center">
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Distribution%20of%20the%20number%20of%20reviews%20for%20the%20beers%20having%20an%20average%20rating%20of%20more%20than%204.png?raw=true" width="600" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
@@ -87,7 +87,7 @@ What we are interested in however is to check if these ratings significantly cha
   <img src="https://raw.githubusercontent.com/albanpuech/risky-biscuits-project/master/assets/img/Mean%20overall%20rating%20for%20each%20beer%20of%20the%20top%205%20and%20each%20climate%20zone.png" width="1000" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
-We can run a chi-squared test to check if the difference in mean rating of each of the 5 most rated beer accross the climate zones is statistically significant. These are the results that we obtain:
+We can run a chi-squared test to check if the difference in mean rating of each of the 5 most rated beer across the climate zones is statistically significant. These are the results that we obtain:
 
 
 <div align="center">
@@ -102,22 +102,32 @@ We can run a chi-squared test to check if the difference in mean rating of each 
 
 </div>
 
-What do we see in this table? Well... 3 beers have a mean rating that significanly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
+What do we see in this table? Well... 3 beers have a mean rating that significantly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
 
 
-
-
-
-
-
-
-
-
+## Climate and Average Beer Scores
 
 ## Is there a correlation between climate and the average beer scores? (Taste, Aroma, Palate, Appearance)
 
+One first step into exploring how climates and beer scores are related would be to look closer at the different sub-scores that, put together, give the beer ratings that we have been looking at up until now!
 
-## How does the favourite styles of beer change across climate regions?
+On Beer Advocate as on Beer Ratings, users are asked to score beers on the four following aspects:
+
+<div align="center">
+  
+| Score      | Description                           | Scale |
+|------------|---------------------------------------|-------|
+| Aroma      | The overall smell of the beer.        | 0 to 5|
+| Appearance | How the beer looks.                   | 0 to 5|
+| Taste      | The overall flavor of the beer.       | 0 to 5|
+| Palate     | The feel of the beer in the mouth.    | 0 to 5|
+
+</div>
+
+
+What's super exciting at this point is that we can start looking a bit deeper into the differences in beer ratings across climate zones by looking at each of these aspects!
+
+## How does the favorite styles of beer change across climate regions?
 
 ## How does the overall review sentiment change across climate regions?
 
@@ -131,5 +141,4 @@ What do we see in this table? Well... 3 beers have a mean rating that significan
 [1] https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF \
 [2] https://weatherandclimate.com/united-states
 [3] Updated world map of the Köppen-Geiger climate classification, M. C. Peel, B. L. Finlayson, and T. A. McMahon
-
 
