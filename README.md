@@ -102,6 +102,8 @@ We can run a chi-squared test to check if the difference in mean rating of each 
 
 </div>
 
+What do we see in this table? Well... 3 beers have a mean rating that significanly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
+
 
 
 
