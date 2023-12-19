@@ -177,8 +177,39 @@ Within each climate category — be it temperate, continental, or dry — climat
 
 
 
+---------------------------- #TODO
+
+SEASONAL PRECIPITATION chi2 test : overall rating for without dry season, with dry season  (b)
+Result: in this case the appearance is varying a lot compared to the aroma which is almost unaffected. It also seems like the locations with dry season liked beers less compared to locations without dry season. Also in this case there is statistically significance between the overall, taste, appearance… parameters within each SEASONAL PRECIPITATION. 
 
 
+HEAT LEVEL chi2 test : overall rating for hot summer, warm summer, cold summer (c)
+Result: there is a statistically significant difference between the overall, taste, appearance… parameters within each HEAT LEVEL. 
+It also looks like appearance is less affected by the HEAT LEVEL compared to for example the aroma, which is the most varying parameter. 
+
+Just by plotting the overall score it seems like the hotter it is the more people like beer
+Even when plotting all the other parameters (tate, appearance,...) it seems like people prefer beer when in a hot environment
+Observation: in all the conditions the variation between the ratings are very little (between 0.02-0.06). The difference is that with this approach we analyzed groups of beers much bigger (combination of different climates) compared to what we did before when we looked at the average rating for each different climate. This can explain the fact that before, the average ratings across the climates varied more (about 0.3) compared to this approach.
+
+Now we compare the a, b, c, d  climate conditions with the abv given to beers: 
+CLIMATE We observed that a lot of beer had abv higher than 11, and that this didn't make any sense so we removed them (about 20000 reviews) for the following tests. 
+Then we tested the mean abv for each climate without having significant results. This lets us group by beer style, and find the three first most liked beers per climate and the three most reviewed. 
+We then computed the abv mean out of them and we observed a significant difference across climates (between 0.4% and 1%). We noticed that the three most liked beers are always out of 5 from the original 10 styles. For the most reviewed we only had 4 styles coming out front the 10 total and not the same as the 5 most liked.  
+We also found a statistical difference between the best beer and the most reviewed beer in each climate. 
+SCHEME For both best beers and most reviewed we have beer with a higher abv for temperate climate than for dry. For both, we obtained the same type of curves and slopes as in the previous case for the average rating. To investigate the correlation between the abv and the rating. (Section 4)
+SEASONAL PRECIPITATION In this case, for the best beer we have a higher abv for location without dry season than for location with. Again in this case curves and slopes are similar to previous cases for the average rating. In contrast, we observed for the most reviewed beers an increase in abv for regions with dry seasons. To investigate the rating according to the general type in this region.
+HEAT LEVEL We obtained the same type of curves and slopes as in the previous case for the average rating for the best beers.The average of the abv of the three best beers is higher for locations with hot summers, slightly less for warm summers and substantially less for cold summers. For the most reviewed beer, again hot summer has a higher abv but for warm and cold we have the same abv.  To investigate the rating according to the general type in this region.
+
+
+Correlation between rating and abv 
+we get weird results 
+
+Investigation of the general styles of beer based on a,b,c and d
+CLIMATE We cannot observe a general pattern among the different climates when looking at the overall mean for each style of beer, but we observe some differences. 
+In a first analysis we observe that for all climates, a part for Cfb, the best beer is the Sour Ale and the following the Stout. For the Cfb it is the contrary.
+SCHEME The styles of beers between the Temperate and Continental are almost the same. For the Dry we have a different trend, where at the second place we find a beer very light in alcohol and bitterness, which is 8th and 9th for the two other SCHEMES. 
+SEASONAL PRECIPITATION In this case the general type are the same for the two conditions, and the result does not contradict the previous ones (Section 3 - abv).
+HEAT LEVEL In this case the hot and warm summers are on the same trend, but for cold summers more light beers come to the top. 
 
 
 
