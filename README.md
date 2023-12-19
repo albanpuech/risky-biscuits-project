@@ -56,7 +56,7 @@ Motivated by those stories, and aware of the power that was into our hands with 
 
 We first looked at the top 5 most rated beers in the US:
 
-<center>
+
   
 | beer_name                     | mean rating | count | location of the brewery  |
 |-------------------------------|-------------|-------|--------------------------|
@@ -66,7 +66,7 @@ We first looked at the top 5 most rated beers in the US:
 | Delirium Tremens              | 4.069993    | 1443  | Belgium                  |
 | Blind Pig IPA                 | 4.364850    | 1367  | United States, California|
 
-<center>
+
 
 Fun Fact: With two beers in the 5 most reviewed beers in the US, Belgian beers seem to be quite popular in the US!
 
@@ -86,7 +86,7 @@ What we are interested in however is to check if these ratings significantly cha
 We can run a chi-squared test to check if the difference in mean rating of each of the 5 most rated beer across the climate zones is statistically significant. These are the results that we obtain:
 
 
-<center>
+
   
 | Beer                            | P-value    | Statistically Significant? |
 |---------------------------------|------------|----------------------------|
@@ -96,7 +96,7 @@ We can run a chi-squared test to check if the difference in mean rating of each 
 | Trappistes Rochefort 10         | 0.0344     | Yes                        |
 | Delirium Tremens                | 0.9948     | No                         |
 
-<center>
+
 
 What do we see in this table? Well... 3 beers have a mean rating that significantly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
 
