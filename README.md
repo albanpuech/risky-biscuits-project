@@ -1,8 +1,13 @@
+
+
 # Pints and Patterns: How Climate Shapes U.S. Beer Ratings
 
-## Introduction
 
-🍻 Welcome to "Pints and Patterns: How Climate Shapes U.S. Beer Ratings"!
+![image](https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/baneer.png?raw=true)
+
+
+## 🍻 Introduction
+Welcome to "Pints and Patterns: How Climate Shapes U.S. Beer Ratings"!
 
 Get ready for a tasty and refreshing adventure! In this project, we are going to pop the cap off the worlds of beers and climate! 
 Who hasn't dreamed of a cold beer on a warm summer's evening? Does a chilly breeze call for a stronger brew? These questions made us wonder: Perhaps our beer tastes change with the climate we're in!
@@ -13,7 +18,7 @@ The questions we will be answering include:
 - Does climate influence people's demand for taste, palate and aroma?
 - How does beer ratings change across seasons in the different climate areas?
 
-## Dataset
+## 🍻 Dataset
 ### Reviews
 The dataset we will be using contains x reviews from two major beer ratings platforms, namely, Beer Advocate and Beer Review.
 These reviews were posted by more than x unique American inhabitants, on a time period spanning the years x to x. The dataset is available at [1].
@@ -48,7 +53,7 @@ All climates except for those in the E group are assigned a seasonal precipitati
 | **E (Polar)**                        |     | T (Tundra)           |                  |
 |                                      |     | F (Ice cap)          |                  |
 
-## How does the average ratings of the 5 most rated beers in the US change across the climate regions?
+## 🍻 How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
 Beer tastes surely are very subjective. Even among groups of close friends, starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torn apart after children revealed their "beer orientation" to their parents.
 
@@ -101,7 +106,7 @@ We can run a chi-squared test to check if the difference in mean rating of each 
 What do we see in this table? Well... 3 beers have a mean rating that significantly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
 
 
-## Climate and Average Beer Scores
+## 🍻 Climate and Average Beer Scores
 
 One first step into exploring how climates and beer scores are related would be to look closer at the different sub-scores that, put together, give the beer ratings that we have been looking at up until now!
 
@@ -118,11 +123,62 @@ On Beer Advocate as on Beer Ratings, users are asked to score beers on the four 
 
 
 
-What's super exciting at this point is that we can start looking a bit deeper into the differences in beer ratings across climate zones by looking at each of these aspects!
+What's super exciting at this point is that we can start looking a bit deeper into the differences in beer ratings across climate zones by looking at each of these aspects! 
 
-## How does the favorite styles of beer change across climate regions?
 
-## How does the overall review sentiment change across climate regions?
+For each climate region, we can perform a t-test to see if there is a statistically significant difference in mean between its mean scores , and the mean scores of the reviews from the whole country. We show the p-values in the following table:
+
+[INSERT P VALUE TABLE HERE from the ]
+
+We can then display the mean score for each category and each climate zone, keeping only the ones that show a statistically significant difference with the mean score computed over the whole country:
+
+#TODO Change this plot to show par plots instead (doesnt make sense to link the points to me)
+![image](https://github.com/albanpuech/risky-biscuits-project/assets/72336171/60ccdc71-e31d-4400-a611-4993cb9242d7)
+
+For every score, we observe differences in the average rating between a few climate zone and the country-level average. However, we cannot see a clear pattern between climated and ratings. We thus decide to group climate zones into larger groups based on the climate scheme, the seasonal precipitation, and the summer heat level. We assign the different climates to the different categories as followed:
+
+
+| climate | scheme      | seasonal_precipitation | heat_level  |
+|---------|-------------|------------------------|-------------|
+| Cfa     | Temperate   | without dry season     | hot summer  |
+| Dfb     | Continental | without dry season     | warm summer |
+| Dfa     | Continental | without dry season     | hot summer  |
+| Csa     | Temperate   | with dry season        | hot summer  |
+| Dsb     | Continental | with dry season        | warm summer |
+| Dfc     | Continental | without dry season     | cold summer |
+| Csb     | Temperate   | with dry season        | warm summer |
+| Bsk     | Dry         | with dry season        | cold summer |
+| Cfb     | Temperate   | without dry season     | warm summer |
+| Dsc     | Continental | with dry season        | cold summer |
+
+
+
+### Focusing on climate schemes instead of climate zones
+
+We first work with the scheme categories.
+We perform a chi-squared test to check if the different climate scheme show significantly different mean scores for the 4 categories. 
+
+#TODO I think there is an issue with these results, no?
+
+| Score Category | P-value                    | Statistically Significant? |
+|----------------|----------------------------|----------------------------|
+| Aroma          | 1.0991290603490593e-38     | Yes                        |
+| Appearance     | 1.7394357136527266e-52     | Yes                        |
+| Palate         | 7.648038295249008e-29      | Yes                        |
+| Taste          | 1.7962281611299406e-44     | Yes                        |
+| Overall        | 2.358910645578224e-35      | Yes                        |
+
+
+The results show that in all the cases, except appearance,  the average rating decreases from temperate to continental and to dry. In contrast, appearance increases from 3.92 to around 3.95. The tests are all statistically significant.
+Within each climate category — be it temperate, continental, or dry — climates may either experience a dry season or not, adding a layer of variation within the same scheme. 
+
+[INSERT RESULTS OF SEASONAL PRECIPITATION HERE]
+
+
+
+
+
+
 
 
 
