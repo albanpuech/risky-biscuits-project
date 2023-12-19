@@ -30,7 +30,7 @@ It divides climates into five groups, which defines the first letter of the name
 
 All climates except for those in the E group are assigned a seasonal precipitation subgroup that defines the second letter, while the third one indicates the temperature subgroup [3]. All in all, we obtain the following categories:
 
-<div align="center">
+<center>
   
 | Köppen climate classification scheme | 1st | 2nd                 | 3rd              |
 |--------------------------------------|-----|----------------------|------------------|
@@ -50,7 +50,7 @@ All climates except for those in the E group are assigned a seasonal precipitati
 | **E (Polar)**                        |     | T (Tundra)           |                  |
 |                                      |     | F (Ice cap)          |                  |
 
-</div>
+<center>
 
 ## How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
@@ -60,7 +60,7 @@ Motivated by those stories, and aware of the power that was into our hands with 
 
 We first looked at the top 5 most rated beers in the US:
 
-<div align="center">
+<center>
   
 | beer_name                     | mean rating | count | location of the brewery  |
 |-------------------------------|-------------|-------|--------------------------|
@@ -70,7 +70,7 @@ We first looked at the top 5 most rated beers in the US:
 | Delirium Tremens              | 4.069993    | 1443  | Belgium                  |
 | Blind Pig IPA                 | 4.364850    | 1367  | United States, California|
 
-</div>
+<center>
 
 Fun Fact: With two beers in the 5 most reviewed beers in the US, Belgian beers seem to be quite popular in the US!
 
@@ -90,8 +90,8 @@ What we are interested in however is to check if these ratings significantly cha
 We can run a chi-squared test to check if the difference in mean rating of each of the 5 most rated beer across the climate zones is statistically significant. These are the results that we obtain:
 
 
-<div align="center">
-
+<center>
+  
 | Beer                            | P-value    | Statistically Significant? |
 |---------------------------------|------------|----------------------------|
 | Blind Pig IPA                   | 0.0194     | Yes                        |
@@ -100,7 +100,7 @@ We can run a chi-squared test to check if the difference in mean rating of each 
 | Trappistes Rochefort 10         | 0.0344     | Yes                        |
 | Delirium Tremens                | 0.9948     | No                         |
 
-</div>
+<center>
 
 What do we see in this table? Well... 3 beers have a mean rating that significantly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
 
@@ -111,7 +111,7 @@ One first step into exploring how climates and beer scores are related would be 
 
 On Beer Advocate as on Beer Ratings, users are asked to score beers on the four following aspects:
 
-<div align="center">
+
   
 | Score      | Description                           | Scale |
 |------------|---------------------------------------|-------|
@@ -120,7 +120,6 @@ On Beer Advocate as on Beer Ratings, users are asked to score beers on the four 
 | Taste      | The overall flavor of the beer.       | 0 to 5|
 | Palate     | The feel of the beer in the mouth.    | 0 to 5|
 
-</div>
 
 
 What's super exciting at this point is that we can start looking a bit deeper into the differences in beer ratings across climate zones by looking at each of these aspects!
