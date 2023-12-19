@@ -107,8 +107,6 @@ What do we see in this table? Well... 3 beers have a mean rating that significan
 
 ## Climate and Average Beer Scores
 
-## Is there a correlation between climate and the average beer scores? (Taste, Aroma, Palate, Appearance)
-
 One first step into exploring how climates and beer scores are related would be to look closer at the different sub-scores that, put together, give the beer ratings that we have been looking at up until now!
 
 On Beer Advocate as on Beer Ratings, users are asked to score beers on the four following aspects:
