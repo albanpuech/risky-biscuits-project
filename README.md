@@ -30,8 +30,6 @@ It divides climates into five groups, which defines the first letter of the name
 
 All climates except for those in the E group are assigned a seasonal precipitation subgroup that defines the second letter, while the third one indicates the temperature subgroup [3]. All in all, we obtain the following categories:
 
-<center>
-  
 | Köppen climate classification scheme | 1st | 2nd                 | 3rd              |
 |--------------------------------------|-----|----------------------|------------------|
 | **A (Tropical)**                     |     | f (Rainforest)       |                  |
@@ -49,8 +47,6 @@ All climates except for those in the E group are assigned a seasonal precipitati
 |                                      |     |                      | d (Very cold winter) |
 | **E (Polar)**                        |     | T (Tundra)           |                  |
 |                                      |     | F (Ice cap)          |                  |
-
-<center>
 
 ## How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
