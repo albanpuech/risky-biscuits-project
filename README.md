@@ -28,8 +28,10 @@ It divides climates into five groups, which defines the first letter of the name
 - D (continental)
 - E (polar)
 
-All climates except for those in the E group are assigned a seasonal precipitation subgroup that defines the second letter, while the third one indicates the temperature subgroup. All in all, we obtain the following categories:
+All climates except for those in the E group are assigned a seasonal precipitation subgroup that defines the second letter, while the third one indicates the temperature subgroup [3]. All in all, we obtain the following categories:
 
+<div align="center">
+  
 | Köppen climate classification scheme | 1st | 2nd                 | 3rd              |
 |--------------------------------------|-----|----------------------|------------------|
 | **A (Tropical)**                     |     | f (Rainforest)       |                  |
@@ -48,6 +50,7 @@ All climates except for those in the E group are assigned a seasonal precipitati
 | **E (Polar)**                        |     | T (Tundra)           |                  |
 |                                      |     | F (Ice cap)          |                  |
 
+</div>
 
 ## How does the average ratings of the US TOP 10 beers change across the climate regions?
 
@@ -55,7 +58,58 @@ Beer tastes surely are very subjective. Even among groups of close friends, star
 
 Motivated by those stories, and aware of the power that was into our hands with our best data analysis tools, we realized the impact that we could have on resolving one of today's major challenge: avoiding Stanford graduates getting disavowed by their parents after they come back with their beer tastes totally changed by the warm climate of the Bay Area, that often pushes them to switch to lighter beers to go well with their weekly barbecues.
 
-We first looked at the top 10 best rated beers in the US. [to be continued]
+We first looked at the top 5 most rated beers in the US:
+
+<div align="center">
+  
+| beer_name                     | mean rating | count | location of the brewery  |
+|-------------------------------|-------------|-------|--------------------------|
+| Brooklyn Black Chocolate Stout| 4.055809    | 2522  | United States, New York  |
+| Trappistes Rochefort 10       | 4.391764    | 2483  | Belgium                  |
+| AleSmith Speedway Stout       | 4.327619    | 1575  | United States, California|
+| Delirium Tremens              | 4.069993    | 1443  | Belgium                  |
+| Blind Pig IPA                 | 4.364850    | 1367  | United States, California|
+
+</div>
+
+Fun Fact: With two beers in the 5 most reviewed beers in the US, belgian beers seem to be quite popular in the the US!
+
+These beers are the most reviewed ones, but they don't seem to have really high scores! In fact, we can see that beers with a large average review seem to be the ones with less reviews:
+
+<p align="center">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Distribution%20of%20the%20number%20of%20reviews%20for%20the%20beers%20having%20an%20average%20rating%20of%20more%20than%204.png?raw=true" width="600" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+</p>
+
+What we are interested in however is to check if these ratings significantly change across climate zones. At first sight, it is quite complicated to draw any conclusion based on a visualization of the data alone:
+
+<p align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/albanpuech/risky-biscuits-project/master/assets/img/Mean%20overall%20rating%20for%20each%20beer%20of%20the%20top%205%20and%20each%20climate%20zone.png" width="1000" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+</p>
+
+We can run a chi-squared test to check if the difference in mean rating of each of the 5 most rated beer accross the climate zones is statistically significant. These are the results that we obtain:
+
+
+<div align="center">
+
+| Beer                            | P-value    | Statistically Significant? |
+|---------------------------------|------------|----------------------------|
+| Blind Pig IPA                   | 0.0194     | Yes                        |
+| AleSmith Speedway Stout         | 0.0130     | Yes                        |
+| Brooklyn Black Chocolate Stout  | 0.9298     | No                         |
+| Trappistes Rochefort 10         | 0.0344     | Yes                        |
+| Delirium Tremens                | 0.9948     | No                         |
+
+</div>
+
+
+
+
+
+
+
+
+
 
 
 ## Is there a correlation between climate and the average beer scores? (Taste, Aroma, Palate, Appearance)
@@ -72,8 +126,8 @@ We first looked at the top 10 best rated beers in the US. [to be continued]
 
 
 
-[1] \
-[2] \
-[3] World Map of the Köppen-Geiger climate classification updated
+[1] https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF \
+[2] https://weatherandclimate.com/united-states
+[3] Updated world map of the Köppen-Geiger climate classification, M. C. Peel, B. L. Finlayson, and T. A. McMahon
 
 
