@@ -10,8 +10,8 @@
 Welcome to "Pints and Patterns: How Climate Shapes U.S. Beer Ratings"!
 
 Get ready for a tasty and refreshing adventure! In this project, we are going to pop the cap off the worlds of beers and climate! 
-Who hasn't dreamed of a cold beer on a warm summer's evening? Does a chilly breeze call for a stronger brew? These questions made us wonder: Perhaps our beer tastes change with the climate we're in!
-We will take you on a bubbly journey to explore how the sunny beaches, snowy mountains, and everything in between across the U.S. influence the way Americans rate their favorite beers!
+Who hasn't dreamed of a cold beer on a warm summer's evening?  This question made us wonder: Maybe our beer tastes change with the climate we're in!
+We will take you on an exciting journey to explore how the sunny beaches, snowy mountains, and everything in between across the U.S. influence the way Americans rate their favorite beers!
 
 The questions we will be answering include:
 - Is there a correlation between climate and the overall beer reviews?
@@ -170,18 +170,16 @@ We perform a chi-squared test to check if the different climate scheme show sign
 
 
 The results show that in all the cases, except appearance,  the average rating decreases from temperate to continental and to dry. In contrast, appearance increases from 3.92 to around 3.95. The tests are all statistically significant.
-Within each climate category — be it temperate, continental, or dry — climates may either experience a dry season or not, adding a layer of variation within the same scheme. 
+Within each climate category — be it temperate, continental, or dry — climates may either experience a dry season or not, adding a layer of variation within the same scheme.
+
+[Peaople don't leave the same way blablabla]
+
+This is the second level of the Kopper climate classification
 
 [INSERT RESULTS OF SEASONAL PRECIPITATION HERE]
 
-
-
-
----------------------------- #TODO
-
-SEASONAL PRECIPITATION chi2 test : overall rating for without dry season, with dry season  (b)
-Result: in this case the appearance is varying a lot compared to the aroma which is almost unaffected. It also seems like the locations with dry season liked beers less compared to locations without dry season. Also in this case there is statistically significance between the overall, taste, appearance… parameters within each SEASONAL PRECIPITATION. 
-
+[We can also look at the heat level]
+[DEF heat level]
 
 HEAT LEVEL chi2 test : overall rating for hot summer, warm summer, cold summer (c)
 Result: there is a statistically significant difference between the overall, taste, appearance… parameters within each HEAT LEVEL. 
@@ -190,6 +188,9 @@ It also looks like appearance is less affected by the HEAT LEVEL compared to for
 Just by plotting the overall score it seems like the hotter it is the more people like beer
 Even when plotting all the other parameters (tate, appearance,...) it seems like people prefer beer when in a hot environment
 Observation: in all the conditions the variation between the ratings are very little (between 0.02-0.06). The difference is that with this approach we analyzed groups of beers much bigger (combination of different climates) compared to what we did before when we looked at the average rating for each different climate. This can explain the fact that before, the average ratings across the climates varied more (about 0.3) compared to this approach.
+
+
+We
 
 Now we compare the a, b, c, d  climate conditions with the abv given to beers: 
 CLIMATE We observed that a lot of beer had abv higher than 11, and that this didn't make any sense so we removed them (about 20000 reviews) for the following tests. 
@@ -201,7 +202,7 @@ SEASONAL PRECIPITATION In this case, for the best beer we have a higher abv for 
 HEAT LEVEL We obtained the same type of curves and slopes as in the previous case for the average rating for the best beers.The average of the abv of the three best beers is higher for locations with hot summers, slightly less for warm summers and substantially less for cold summers. For the most reviewed beer, again hot summer has a higher abv but for warm and cold we have the same abv.  To investigate the rating according to the general type in this region.
 
 
-Correlation between rating and abv 
+In cold and dark environments, people need to 
 we get weird results 
 
 Investigation of the general styles of beer based on a,b,c and d
