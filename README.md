@@ -202,7 +202,7 @@ SEASONAL PRECIPITATION In this case, for the best beer we have a higher abv for 
 HEAT LEVEL We obtained the same type of curves and slopes as in the previous case for the average rating for the best beers.The average of the abv of the three best beers is higher for locations with hot summers, slightly less for warm summers and substantially less for cold summers. For the most reviewed beer, again hot summer has a higher abv but for warm and cold we have the same abv.  To investigate the rating according to the general type in this region.
 
 
-In cold and dark environments, people need to 
+
 we get weird results 
 
 Investigation of the general styles of beer based on a,b,c and d
