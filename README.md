@@ -189,27 +189,50 @@ Just by plotting the overall score it seems like the hotter it is the more peopl
 Even when plotting all the other parameters (tate, appearance,...) it seems like people prefer beer when in a hot environment
 Observation: in all the conditions the variation between the ratings are very little (between 0.02-0.06). The difference is that with this approach we analyzed groups of beers much bigger (combination of different climates) compared to what we did before when we looked at the average rating for each different climate. This can explain the fact that before, the average ratings across the climates varied more (about 0.3) compared to this approach.
 
+## 🍻 Climate and Alcohol Level of Beers
 
-We
+A group of researchers at the University of Pittsberg (https://dom.pitt.edu/people-drink-more-in-colder-regions-bataller-led-study-finds/) found a negative correlation between climate factors and alcohol consumption. This means that, as climate factors like temperature drop, the average alcohol consumption increases. But does this mean that the average drink’s alcohol level rises or rather that people drink more alcoholic drinks in general? Let’s investigate!
 
-Now we compare the a, b, c, d  climate conditions with the abv given to beers: 
-CLIMATE We observed that a lot of beer had abv higher than 11, and that this didn't make any sense so we removed them (about 20000 reviews) for the following tests. 
-Then we tested the mean abv for each climate without having significant results. This lets us group by beer style, and find the three first most liked beers per climate and the three most reviewed. 
-We then computed the abv mean out of them and we observed a significant difference across climates (between 0.4% and 1%). We noticed that the three most liked beers are always out of 5 from the original 10 styles. For the most reviewed we only had 4 styles coming out front the 10 total and not the same as the 5 most liked.  
-We also found a statistical difference between the best beer and the most reviewed beer in each climate. 
-SCHEME For both best beers and most reviewed we have beer with a higher abv for temperate climate than for dry. For both, we obtained the same type of curves and slopes as in the previous case for the average rating. To investigate the correlation between the abv and the rating. (Section 4)
-SEASONAL PRECIPITATION In this case, for the best beer we have a higher abv for location without dry season than for location with. Again in this case curves and slopes are similar to previous cases for the average rating. In contrast, we observed for the most reviewed beers an increase in abv for regions with dry seasons. To investigate the rating according to the general type in this region.
-HEAT LEVEL We obtained the same type of curves and slopes as in the previous case for the average rating for the best beers.The average of the abv of the three best beers is higher for locations with hot summers, slightly less for warm summers and substantially less for cold summers. For the most reviewed beer, again hot summer has a higher abv but for warm and cold we have the same abv.  To investigate the rating according to the general type in this region.
+In order to do so, let’s study the ABV (alcohol by volume) rating for each beer and find possible correlations between it and the climate factors. We are interested in the popularity of the beers as well as their overall score. We approximate the popularity of a given beer by the number of reviews it received, although it is important to note that these are slightly different. Indeed, we cannot infer the exact number of beers drank, but, since we have a big enough sample, we can approximate it by the number of reviews received. As for the climate factors, we use the ones described earlier: climate, scheme, seasonal precipitation, heat level. 
 
+DESCRIBE COMPUTATION OF “BEST BEERS”
 
+### Focusing on ABV per climate
 
-we get weird results 
+BOXPLOT OF ABV FOR ALL BEERS
 
-Investigation of the general styles of beer based on a,b,c and d
-CLIMATE We cannot observe a general pattern among the different climates when looking at the overall mean for each style of beer, but we observe some differences. 
-In a first analysis we observe that for all climates, a part for Cfb, the best beer is the Sour Ale and the following the Stout. For the Cfb it is the contrary.
+As shown on the boxplot, the rated beers are centred around a mean ABV of 7.06 and half are contained in the [5.4 ; 8.2] range. We want to know how this distribution differs in the different climate categories. When testing the difference in mean ABV for each climate, the results are not significant. Therefore, we group the beers by general beer type and climate. This uses a mapping done manually which maps each beer to a general style of beer according to an article by EHL (https://hospitalityinsights.ehl.edu/beer-types). The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale.
+
+BOXPLOT OF ABV FOR EACH BEER TYPE
+
+- analysis for this 
+
+PLOT LINEAIRE + CARTES AVEC EVALUATION
+
+First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. It can be quickly observed that many beers are outliers with an ABV higher than 11. These are around 2000 reviews and are removed for the following tests as it doesn’t make sense to use beers with more than 11% of alcohol. 
+
+From the grouped beers, we find the three most liked beer styles and the three most reviewed. The ABV mean is significantly different across the climates (between 0.4% and 1%) which means that users in different climates drink beers with diverse levels of alcohol. We can also note that the three most liked beers are always out of five from the original ten styles. For the most reviewed, these are only four styles out of the total 10 and are different than the 5 most liked. We indeed find that there is a statistical difference between the best beer and the most reviewed beer in each climate. This means that the most drunken beers are different than the types of beer preferred. 
+
+When observing the scheme, we can notice that both the best rated beers and the most reviewed beers have a higher ABV in a temperate climate than a dry one. The type of curves and slopes are similar to the previous analysis for the average rating as a function of the ABV. This could be further investigated to find a possible correlation between the ABV and rating given as a function of the climate scheme. 
+
+For the seasonal precipitation groups, the best beers have a higher ABV in locations without a dry season than in those with. Again, in this case, curves and slopes are similar to previous cases for the average rating of ABV. In contrast, we can notice that, for the most reviewed beers, there is an increase in ABV for regions with dry seasons. We could further analyse the overall rating in terms of the ABV and seasonal precipitation. 
+
+Lastly, when observing the heat levels of the different climates, we obtain the same type of curves and slopes as in the previous case for the average rating for the best beers. The average of the abv of the three best beers is higher for locations with hot summers, slightly less for warm summers and substantially less for cold summers. For the most reviewed beer, again hot summer has a higher abv but for warm and cold we have the same abv. A further investigation can be performed to find a correlation between the ABV and rating given.
+
+### Correlation between ABV and rating 
+
+As we notice that most climate factors have a similar trend with the rating in terms of the ABV of the beer types, we are curious to know if these ratings depend on the climate factor or rather simply on the ABV. We are therefore looking for a correlation between the ABV and rating. 
+
+weird results, to be done further
+
+## 🍻 Climate and types of beers 
+
+CLIMATE We cannot observe a general pattern among the different climates when looking at the overall mean for each style of beer, but we observe some differences. In a first analysis we observe that for all climates, a part for Cfb, the best beer is the Sour Ale and the following the Stout. For the Cfb it is the contrary.
+
 SCHEME The styles of beers between the Temperate and Continental are almost the same. For the Dry we have a different trend, where at the second place we find a beer very light in alcohol and bitterness, which is 8th and 9th for the two other SCHEMES. 
+
 SEASONAL PRECIPITATION In this case the general type are the same for the two conditions, and the result does not contradict the previous ones (Section 3 - abv).
+
 HEAT LEVEL In this case the hot and warm summers are on the same trend, but for cold summers more light beers come to the top. 
 
 
