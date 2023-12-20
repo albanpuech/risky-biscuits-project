@@ -203,11 +203,17 @@ First, lets take a look at the overall ratings given to each beer by the respect
 - macro average: mean of the overall averages per climate for all beers
 - micro average: mean of all the overall averages 
 
-PLOT OF OVERALL BEER RANKINGS PER BEER STYLE AS A FN OF CLIMATE
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/88210c08-2bd3-4f0f-821d-10912938825a raw=true" width="1000" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+</p>
 
 This plot can make us think that there are significant variabilities between the approval of the various beer styles by the different climates. Therefore, we perform a ranking of the beer styles and most popular beer styles to investigate this. When ranking the best beers per climate group, however, we can immediately notice that there is very little variability between the climate groups! For instance, Sour Ale is the common best rated beer followed by Stout. For all climates apart from Csb and Dfc where it is Porter, the third best rated beer is IPA. On the other hand, the most popular beers are very different from the best rated beers with IPA in first place and Pale Ale in second. Variability is also low and only affects ranks 3-8. 
 
-PLOT: BEERS AVERAGE POSITION 
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/05e4d3c0-4a26-4752-9fb0-629a64cfbe57 raw=true" width="700" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+</p>
 
 Indeed, when looking at the average position of each beer style, Sour Ale is first with 1.0, followed by Stout with 2.0, IPA with 3.2 and Porter with 3.8. However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact 5.4. The top four are IPA with 1.0, Pale Ale with 2.0, Brown Ale at 3,3 and Porter at 3.7. This means that the most popular beer is not necessarily the most preferred. 
 
@@ -232,7 +238,7 @@ As shown on the boxplot, the rated beers are centred around a mean ABV of 7.00 a
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_boxplot_styles.png?raw=true" width="800" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/5c94d2f5-e246-46d0-862b-04721335acdb raw=true" width="800" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
 TEXT ANALYSING BOXPLOTS
