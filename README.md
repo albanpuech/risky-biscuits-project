@@ -189,7 +189,9 @@ Having unraveled the preliminary layers of our investigation into the impact of 
 
 ### Making the beer type mapping
 
-In order to make this mapping, we need to map each specific type of beer to a general style. This uses a mapping done manually which relates each beer to a general style of beer according to an article by EHL (https://hospitalityinsights.ehl.edu/beer-types). The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale.
+In order to make this mapping, we need to map each specific type of beer to a general style. This uses a mapping done manually which relates each beer to a general style of beer according to an article by EHL (https://hospitalityinsights.ehl.edu/beer-types). The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale. Here is the overall ranking of each beer type for the whole US.
+
+PLOT BEER GLASS RANKING PER TYPE
 
 We are interested in the popularity of the beers as well as the preferred beer. Therefore we approximate the popularity of a given beer by the number of reviews it received, although it is important to note that these are slightly different. Indeed, we cannot infer the exact number of beers drank, but, since we have a big enough sample, we can approximate it by the number of reviews received.
 
@@ -197,7 +199,7 @@ For the computation of the best beers, we first created a new dataframe for each
 
 ### Climate and beer style 
 
-First, lets take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added three different averages. These are: 
+First, let's take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added three different averages. These are: 
 
 - beer macro average: mean of the overall averages per climate for each beer type
 - macro average: mean of the overall averages per climate for all beers
@@ -217,9 +219,11 @@ This plot can make us think that there are significant variabilities between the
 
 Indeed, when looking at the average position of each beer style, Sour Ale is first with 1.0, followed by Stout with 2.0, IPA with 3.2 and Porter with 3.8. However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact 5.4. The top four are IPA with 1.0, Pale Ale with 2.0, Brown Ale at 3,3 and Porter at 3.7. This means that the most popular beer is not necessarily the most preferred. 
 
-Although these are only small varibilites, we chose to investigate these with the different climate factors to see if they might be more consequential. However, for the three categories that are climate schemes, seasonal precipitations and heat levels, the top three beers are the same (Sour Ale, Stout, IPA) and so are the most rated beers (IPA, Pale Ale, Brown Ale).
+Although these are only small varibilites, we chose to investigate these with the different climate factors to see if they might be more consequential. However, for the three categories that are climate schemes, seasonal precipitations and heat levels, the top three beers are the same (Sour Ale, Stout, IPA) and so are the most-rated beers (IPA, Pale Ale, Brown Ale).
 
-In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer styles' ranking doesn't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preferance is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.  
+ADD WORD CLOUD THAT CHARACTERISE THESE BEERS?
+
+In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer style rankings don't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preference is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.  
 
 ## 🍻 Climate and Alcohol Level of Beers
 
@@ -234,14 +238,14 @@ In order to do so, let’s study the ABV (alcohol by volume) rating for each bee
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_all_bears.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
-As shown on the boxplot, the rated beers are centred around a mean ABV of 7.00 and half are contained in the [5.4 ; 8.0] range. We want to know how this distribution differs in the different climate categories. When testing the difference in mean ABV for each climate, the results are not significant. Therefore, we group the beers by general beer type and climate. This uses the same mapping as before.
+As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00, and half are contained in the [5.4;8.0] range. We want to know how this distribution differs in the different climate categories. When testing the difference in mean ABV for each climate, the results are not significant. Therefore, we group the beers by general beer type and climate. This uses the same mapping as before.
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/5c94d2f5-e246-46d0-862b-04721335acdb raw=true" width="800" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
-TEXT ANALYSING BOXPLOTS
+INTERPRETATION
 
 First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. From the grouped beers, we find the three most liked beer styles and the three most reviewed. 
 
