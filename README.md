@@ -175,10 +175,12 @@ This is the second level of the Kopper climate classification
 
 HEAT LEVEL chi2 test : overall rating for hot summer, warm summer, cold summer (c)
 Result: there is a statistically significant difference between the overall, taste, appearance… parameters within each HEAT LEVEL. 
+
 It also looks like appearance is less affected by the HEAT LEVEL compared to for example the aroma, which is the most varying parameter. 
 
 Just by plotting the overall score it seems like the hotter it is the more people like beer
 Even when plotting all the other parameters (tate, appearance,...) it seems like people prefer beer when in a hot environment
+
 Observation: in all the conditions the variation between the ratings are very little (between 0.02-0.06). The difference is that with this approach we analyzed groups of beers much bigger (combination of different climates) compared to what we did before when we looked at the average rating for each different climate. This can explain the fact that before, the average ratings across the climates varied more (about 0.3) compared to this approach.
 
 ## 🍻 Climate and styles of beers 
@@ -191,29 +193,27 @@ In order to make this mapping, we need to map each specific type of beer to a ge
 
 We are interested in the popularity of the beers as well as the preferred beer. Therefore we approximate the popularity of a given beer by the number of reviews it received, although it is important to note that these are slightly different. Indeed, we cannot infer the exact number of beers drank, but, since we have a big enough sample, we can approximate it by the number of reviews received.
 
-DESCRIBE COMPUTATION OF “BEST BEERS”
+For the computation of the best beers, we first created a new dataframe for each climate from which we grouped by general style. Then, we calculated the mean of the overall score for each beer and we sorted in an ascending sequence. From this point we kept only the 3 beers with the highest overall score for each climate, considering them the best beers in the different conditions.
 
-### General beer type analysis 
+### Climate and beer style 
 
-First, we perform general analysis of the ranking of the beer types to investigate any possible trends. When ranking the best beers per climate group, we can immediately notice that Sour Ale is the common best rated beer in each climate.
+First, lets take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added three different averages. These are: 
+
+- beer macro average: mean of the overall averages per climate for each beer type
+- macro average: mean of the overall averages per climate for all beers
+- micro average: mean of all the overall averages 
+
+PLOT OF OVERALL BEER RANKINGS PER BEER STYLE AS A FN OF CLIMATE
+
+This plot can make us think that there are significant variabilities between the approval of the various beer styles by the different climates. Therefore, we perform a ranking of the beer styles and most popular beer styles to investigate this. When ranking the best beers per climate group, however, we can immediately notice that there is very little variability between the climate groups! For instance, Sour Ale is the common best rated beer followed by Stout. For all climates apart from Csb and Dfc where it is Porter, the third best rated beer is IPA. On the other hand, the most popular beers are very different from the best rated beers with IPA in first place and Pale Ale in second. Variability is also low and only affects ranks 3-8. 
 
 PLOT: BEERS AVERAGE POSITION 
 
-Indeed, when looking at the average position of each beer style, Sour Ale is first, with … However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact … This means that the most popular beer is not necessarily the most preferred. Let's have a look at the other climate factors to find out if this trend is similar. 
+Indeed, when looking at the average position of each beer style, Sour Ale is first with 1.0, followed by Stout with 2.0, IPA with 3.2 and Porter with 3.8. However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact 5.4. The top four are IPA with 1.0, Pale Ale with 2.0, Brown Ale at 3,3 and Porter at 3.7. This means that the most popular beer is not necessarily the most preferred. 
 
-### Climate factors and beer styles 
+Although these are only small varibilites, we chose to investigate these with the different climate factors to see if they might be more consequential. However, for the three categories that are climate schemes, seasonal precipitations and heat levels, the top three beers are the same (Sour Ale, Stout, IPA) and so are the most rated beers (IPA, Pale Ale, Brown Ale).
 
-In the climate grouping, there doesn’t seem to be a general pattern among the different climates when looking at the overall mean for each style of beer. We can, however, observe some differences like the fact that the best beer is Sour Ale followed by Stout for all climates apart from Cfb where it is the contrary.
-
-=> pas les memes ratings interclimat mais memes ratings dans plus grandes categories: 
-
-SCHEME The styles of beers between the Temperate and Continental are almost the same. For the Dry we have a different trend, where at the second place we find a beer very light in alcohol and bitterness, which is 8th and 9th for the two other SCHEMES. 
-
-SEASONAL PRECIPITATION In this case the general type are the same for the two conditions, and the result does not contradict the previous ones (Section 3 - abv).
-
-HEAT LEVEL In this case the hot and warm summers are on the same trend, but for cold summers more light beers come to the top.
-
-=> beer type not determined by climate: difference dans l'appreciation des bieres en general mais l'ordre est le meme 
+In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer styles' ranking doesn't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preferance is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.  
 
 ## 🍻 Climate and Alcohol Level of Beers
 
