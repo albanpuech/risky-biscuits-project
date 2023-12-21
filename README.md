@@ -83,9 +83,9 @@ Keeping in mind that the y-axis does not start at zero on these plots, we still 
  
 From this plot, even though all ratings have a  difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
 
-For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. We could hypothesise that this climate would make people less incline to drink beers and, when they do, have higher standards because they drink it for its specific content. Indeed, we can see that the Dsc and Dsb climates give a fewer number of reviews whereas all of the hot summer climates have much more reviews. 
+For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
 
-PLOT: NUMBER OF RATINGS PER CLIMATE
+Looking at the plot of the climates zones in the US, we can see that Dsb and DPLOT: NUMBER OF RATINGS PER CLIMATE
 
 Overall, there are significant differences in the appreciation of beers between climate groups, but the pattern in itself is not clear. Maybe some trends are enhanced when grouping the climate zones into larger groups? Let's take a look!
 
@@ -186,22 +186,24 @@ In order to do so, let’s study the ABV rating for each beer and find possible 
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_all_bears.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_boxplot.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
 As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00°, and half are contained in the [5.4°, 8.0°] range. We want to know how this distribution differs in the different climate categories. 
 
-
-INTERPRETATION
-
-First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. From the grouped beers, we find the three most liked beer styles and the three most reviewed. 
+First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. From the grouped climates, we find the three most liked beer styles and the three most reviewed. 
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Mean%20abv%20of%20the%203%20most%20reviewed%20beers%20for%20each%20climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Mean%20abv%20of%20the%20best%203%20beers%20for%20each%20climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
-The ABV mean is significantly different across the climates (between 0.4% and 1%) which means that users in different climates drink beers with diverse levels of alcohol. We can also note that the three most liked beers are always out of five from the original ten styles. For the most reviewed, these are only four styles out of the total 10 and are different than the 5 most liked. We indeed find that there is a statistical difference between the best beer and the most reviewed beer in each climate. This means that the most drunken beers are different than the types of beer preferred. 
+By looking at the two U.S. maps here above, we can see that there is variation in the abv average between the best beers and the most reviewd beers. It results that for the preferred beers the abv mean is higher than for the most populars. cIn both cases, we can observe a variability across the climates but again, too many climets at a time make the results har
+
+The ABV mean is significantly different across the climates (between 0.4% and 1%) which means that users in different climates drink beers with diverse levels of alcohol. 
+
+
+We can also note that the three most liked beers are always out of five from the original ten styles. For the most reviewed, these are only four styles out of the total 10 and are different than the 5 most liked. We indeed find that there is a statistical difference between the best beer and the most reviewed beer in each climate. This means that the most drunken beers are different than the types of beer preferred. 
 
 <p align="center">
   <br>
