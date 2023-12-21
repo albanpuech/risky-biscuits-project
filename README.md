@@ -80,56 +80,66 @@ We can also look at the other scores:
 </p>
 
 Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates. 
+ 
+From this plot, even though all ratings have a  difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
 
-Something we notice, keeping the same climate order on the y-axis on all plots is that the trend is somewhat similar across all scores. In other words, we observe the same variations in score rating for all scores. This suggests that if the climate does have an impact on beer ratings, its impact is somewhat similar across all the beer aspects that are evaluated by the reviewers.
+For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
 
-Looking at the climates that show the largest score means, and those that show the lowest ones, we can make a few hypotheses. For instance, the Csa and Dfa climates always have a mean rating above the micro averages. These climates have a hot summer which might make the users more inclined to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates have average scores that are below global micro-average. Both of these are continental climates and Dsc, which only covers the state Idaho, also has a cold summer. Would there thus be a relationship between living in a cold environment and having higher expectations and standards for beers?
+Looking at the plot of the climates zones in the US, we can see that Dsb and Dsc only cover two states: Idaho and Washington. We can also check the number of reviews per climate
 
-Looking at the map of the climates in the US, we can see that the Dsb and Dsc climates only cover 2 states: Idaho and Washington, so it might be hard to draw any conclusion at this point.
+<p align="center">
+  <br>
+  <img src="assets\img\Number of ratings per climate.png" height="400" title="Average score for climate schemes">
+</p>
 
-PLOT: NUMBER OF RATINGS PER CLIMATE
-
-Overall, there are significant differences in the appreciation of beers between climate groups, but the pattern in itself is not clear. Maybe some trends are enhanced when grouping the climate zones into larger groups? Let's take a look!
+We thus have to group the climates zones together if we want to have enough beers in each of the groups. This is what we are going to explore next!
 
 ### Climate factors and beers
 
 In this part, we regroup the climate zones based on their scheme, seasonal precipitation, and summer heat level. 
 
+Dry climates show smaller average overall, aroma, taste and palate scores than the other climates. However, the appearance scores are much more similar across temperate, continental and dry climates.
+
+
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_scheme.png?raw=true" height="300" title="Average score for climate schemes">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_scheme.png?raw=true" height="600" title="Average score for climate schemes">
 </p>
+
+We can also look at the precipitation levels:
+
+
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_preci.png?raw=true" height="600" title="Average score for climate precipitations">
+</p>
+
+And at the summer temperature:
+
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_temp.png?raw=true" height="600" title="Average score for climate temepratures">
+</p>
+
 
 Climate scheme: 
-Hot and warm summers are very similar, but much bigger difference with cold summer which has lower ratings in all categories  => different interpretations possible, one could be that …
-Appearance is always similarly rated
-Comparison with overall trend over the months of the year 
+Hot and warm summers show very similar average scores. There however is a much larger difference with cold summer which shows lower scores across all categories.
 
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_preci.png?raw=true" height="300" title="Average score for climate precipitations">
-</p>
+### Conclusion on climate and reviews
 
-Climate precipitation analysis & interpretation
+- There appears to be a correlation between the climatic conditions and the average ratings.
 
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_temp.png?raw=true" height="300" title="Average score for climate temepratures">
-</p>
+- Climate is known to influence personality traits, and it may also influence beer preferences.
 
-Climate temperature analysis & interpretation
+- What we have seen is that areas with hot summers also have larger beer scores, which could may be because of the social and refreshing aspects of beer consumption in warmer areas
 
-### Partial conclusion and link to next part
+- We have also observed that colder climates are associated to lower scores, which may come from the fact that that people in colder climates have higher expectations or different standards of beers. This may be because they put more emphasis on the quality or taste of beers. 
 
-Pas juste géographique, parce qu’avec les nouveaux grouping, il y a toujours des trends (meme genre de résultats apparents) => role positif du climat (il joue un role dans l’appreciation)
-
-Il faut rester ouvert a l’hypothèse que c’et un role indirect -> climat joue un role sur la manière dont on vit et du coup sur la manière dont on apprécie la bière (ex. Dans climats chauds on ferait plus de fetes et du coup on boit plus de bière)
-
-Pas des grandes differences, on s’y attendait car plus de points communs entre deux américains meme si dans climats différents => climat dosent’t define you, it’s your American citizenship 
+- The appearance score was the most stable one across the difference climate regions, maybe because it is also the criteria that is the hardest to rate, as opposed to the palate and the taste that may have more importance than the other criterion.
 
 ## 🍻 Climate and styles of beers 
 
-Having unraveled the preliminary layers of our investigation into the impact of climate trends on beer reviews, we now pivot our analytical lens towards the intricate world of beer types. The initial exploration revealed a fascinating tapestry of how overall ratings, taste, aroma, appearance, and smell are influenced by varying climatic conditions. However, understanding the nuanced relationship between climate and beer preference necessitates a deeper dive into the categorical realm of beers. Do users from certain climates thrive on certain styles of beers, reflecting a harmonious marriage of flavour profiles and atmospheric conditions?
+Having unraveled the preliminary layers of our investigation into the impact of climate trends on beer reviews, we now pivot our analytical lens towards the intricate world of beer types. The initial exploration revealed how overall, taste, aroma, appearance, and palate ratings are influenced by varying climatic conditions. However, understanding the nuanced relationship between climate and beer preference necessitates a deeper dive into the categories of beers. Do users from certain climates thrive on certain styles of beers?
 
 ### Making the beer type mapping
 
@@ -167,38 +177,44 @@ Although these are only small varibilites, we chose to investigate these with th
 
 ADD WORD CLOUD THAT CHARACTERISE THESE BEERS?
 
-In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer style rankings don't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preference is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.  
+In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer style rankings don't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preference is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.
 
-## 🍻 Climate and Alcohol Level of Beers
-
-A group of researchers at the University of Pittsberg (https://dom.pitt.edu/people-drink-more-in-colder-regions-bataller-led-study-finds/) found a negative correlation between climate factors and alcohol consumption. This means that, as climate factors like temperature drop, the average alcohol consumption increases. But does this mean that the average drink’s alcohol level rises or rather that people drink more alcoholic drinks in general? Let’s investigate!
-
-### Focusing on ABV per climate
-
-In order to do so, let’s study the ABV (alcohol by volume) rating for each beer and find possible correlations between it and the climate factors. We use the number of rankings given to a beer as a measure of popularity and their overall score as a measure of preference. As for the climate factors, we use the ones described earlier: climate, scheme, seasonal precipitation, heat level.
-
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_all_bears.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
-</p>
-
-As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00, and half are contained in the [5.4;8.0] range. We want to know how this distribution differs in the different climate categories. When testing the difference in mean ABV for each climate, the results are not significant. Therefore, we group the beers by general beer type and climate. This uses the same mapping as before.
+One of the potential explanation for this is linked with the fact that the chosen general types regroup many different kind of beers in one. We decided to investigate the different statistics linked with the beers and to see if some had a big variation inside of each type. The one that came on top was the alcohol by volume (ABV) as one can see in the following plot.
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_styles.png?raw=true" width="800" title="Horizontal boxplot of the ABV per beer style">
 </p>
 
-INTERPRETATION
+It appears that the ABV varies a lot even inside of each beer style. This could explain why the orders of the beer styles are the same between the climates but the ratings are different. Indeed, the ABV could be a parameter that is more important than the beer style itself. We therefore decided to investigate the ABV and its relation to the ratings given to the beers.
 
-First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. From the grouped beers, we find the three most liked beer styles and the three most reviewed. 
+## 🍻 Climate and Alcohol Level of Beers
+
+A group of researchers at the University of Pittsburgh (https://dom.pitt.edu/people-drink-more-in-colder-regions-bataller-led-study-finds/) found a negative correlation between climate factors and alcohol consumption. This means that, as climate factors like temperature drop, the average alcohol consumption increases. But does this mean that the average drink’s alcohol level rises or rather that people drink more alcoholic drinks in general? Let’s investigate!
+
+### Focusing on ABV per climate
+
+In order to do so, let’s study the ABV rating for each beer and find possible correlations between it and the climate factors. We use the number of rankings given to a beer as a measure of popularity and their overall score as a measure of preference. As for the climate factors, we use the ones described earlier: climate, scheme, seasonal precipitation, heat level.
+
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_boxplot.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+</p>
+
+As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00°, and half are contained in the [5.4°, 8.0°] range. We want to know how this distribution differs in the different climate categories. 
+
+First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. From the grouped climates, we find the three most liked beer styles and the three most reviewed. 
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Mean%20abv%20of%20the%203%20most%20reviewed%20beers%20for%20each%20climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Mean%20abv%20of%20the%20best%203%20beers%20for%20each%20climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
+s
+By looking at the two U.S. maps here above, we can see that there is variation in the abv average between the best beers and the most reviewd beers. It results that for the preferred beers the abv mean is higher than for the most populars. cIn both cases, we can ob
+abv_map_climate.pngin the abv , d to be easily interpreted. We therefore look at the three disctict categories. The ABV mean is significantly different across the climates (between 0.4% and 1%) which means that users in different climates drink beers with diverse levels of alcohol. 
 
-The ABV mean is significantly different across the climates (between 0.4% and 1%) which means that users in different climates drink beers with diverse levels of alcohol. We can also note that the three most liked beers are always out of five from the original ten styles. For the most reviewed, these are only four styles out of the total 10 and are different than the 5 most liked. We indeed find that there is a statistical difference between the best beer and the most reviewed beer in each climate. This means that the most drunken beers are different than the types of beer preferred. 
+
+We can also note that the three most liked beers are always out of five from the original ten styles. For the most reviewed, these are only four styles out of the total 10 and are different than the 5 most liked. We indeed find that there is a statistical difference between the best beer and the most reviewed beer in each climate. This means that the most drunken beers are different than the types of beer preferred. 
 
 <p align="center">
   <br>
