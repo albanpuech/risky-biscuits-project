@@ -18,12 +18,43 @@ The questions we will be answering include:
 - Does climate influence people's demand for taste, palate and aroma?
 - How does beer ratings change across seasons in the different climate areas?
 
-## 🍻 Dataset
-### Reviews
-The dataset we will be using contains x reviews from two major beer ratings platforms, namely, Beer Advocate and Beer Review.
-These reviews were posted by more than x unique American inhabitants, on a time period spanning the years x to x. The dataset is available at [1].
+## 🍻 Dataset (change title)
+### Beer reviews
+
+In order to answers these questions we need data ! Thankfully for us, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. From these plateforms, we gathered 1.6M reviews from 22.8K american users evaluating 134 different beers [1]. 
+A complete review is composed of :
+- Overall rating
+- Subratings 
+  - Aroma
+  - Appearance
+  - Taste
+  - Palate
+- Text review
+<!-- Mettre peut-être une photo de beer advocate ? -->
+Ratings are assigned on a scale from 0 to 5, with 0 being the lowest and 5 the highest. Only the overall rating is obligatory when submitting a review.
 
 ### Climate
+<!--
+The dataset we will be using contains x reviews from two major beer ratings platforms, namely, Beer Advocate and Beer Review.
+These reviews were posted by more than x unique American inhabitants, on a time period spanning the years x to x. The dataset is available at [1].
+-->
+What about the climate ? While many climate classification exist, we'll be using the popular Köppen climate classification. Let's look at the climates in the US.
+
+map of US climate, possibly interactive ? whith 
+
+10 different climates are present in the US : 
+
+| 1st | 2nd                 | 3rd              |
+|--------------------------------------|----------------------|------------------|
+| **B (Dry)**                               | s (Semi-Arid or steppe) | k (Cold)      |
+| **C (Temperate)**                         | f (No dry season)      | a (Hot summer)   |
+|                                           | s (Dry summer)    | b (Warm summer)  |
+| **D (Continental)**                       | f (No dry season)      | a (Hot summer)   |
+|                                           | s (Dry summer)  | b (Warm summer)  |
+|                                           |                 | c (Cold summer)  |
+
+
+<!--
 We use the Köppen climate classification data of the US states. The dataset was obtained from [2]. This climate classification is one of the most widely used ones.
 
 It divides climates into five groups, which defines the first letter of the names of the climate classification groups. These are:
@@ -52,6 +83,7 @@ All climates except for those in the E group are assigned a seasonal precipitati
 |                                      |     |                      | d (Very cold winter) |
 | **E (Polar)**                        |     | T (Tundra)           |                  |
 |                                      |     | F (Ice cap)          |                  |
+-->
 
 ## 🍻 How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
