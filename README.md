@@ -22,7 +22,7 @@ In order to answers these questions we need data ! Thankfully for us, people aro
 A complete review looks like this :
 
 <p align="center">
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Distribution%20of%20the%20number%20of%20reviews%20for%20the%20beers%20having%20an%20average%20rating%20of%20more%20than%204.png?raw=true" width="600" title="Example review coming from Beer advocate">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/ex_review.png?raw=true" width="600" title="Example review coming from Beer advocate">
 </p>
 
 The overall rating as well as the subratings (Aroma, Appearance, Taster, Palate) are assigned on a scale from 0 to 5, with 0 being the lowest and 5 the highest. Only the overall rating is obligatory when submitting a review.
@@ -42,9 +42,11 @@ map of US climate, possibly interactive ? whith
 |                                           | s (Dry summer)  | b (Warm summer)  |
 |                                           |                 | c (Cold summer)  |
 
+Now that we have lots of data, let's dive into it !
 
 
-## 🍻 How does the average ratings of the 5 most rated beers in the US change across the climate regions?
+
+<!-- ## 🍻 How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
 Beer tastes surely are very subjective. Even among groups of close friends, starting a debate about beer tastes at dinner can be as risky as bringing up politics and religion at Thanksgiving! We have all heard of entire families getting destroyed and torn apart after children revealed their "beer orientation" to their parents.
 
@@ -90,6 +92,8 @@ We can run a chi-squared test to check if the difference in mean rating of each 
 
 
 What do we see in this table? Well... 3 beers have a mean rating that significantly changes across climate zones! Does that tell us anything about whether the climate impacts beer ratings? No! In the remaining of this project, we want to explore some more the hidden links between climate and beer ratings...
+
+-->
 
 
 ## 🍻 Climate and Average Beer Scores
