@@ -157,13 +157,15 @@ First, let's take a look at the overall ratings given to each beer by the respec
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/beer_type_average_ratings.png?raw=true" max-height="600" title="Overall beer rankings per beer style as a function of the climate">   
 </p>
 
-There are indeed significant variabilities between the overall score of the various beer styles by the different climates, leading us to think that people from certain climates prefer certain beer styles. Therefore, we perform a ranking of the beer styles and most popular beer styles to investigate this. When ranking the best beers per climate group, however, we can immediately notice that there is very little variability between the climate groups! For instance, Sour Ale is the best rated beer followed by Stout. For all climates apart from Csb and Dfc where it is Porter, the third best rated beer is IPA. On the other hand, the most popular beers are very different from the best rated beers with IPA in first place and Pale Ale in second. Variability is also low and only affects ranks 3-8. 
+There are indeed significant variabilities between the overall score of the various beer styles by the different climates, leading us to think that people from certain climates prefer certain beer styles. However, when ranking the best beers per climate group, we could immediately notice that there is very little variability between the climate groups. 
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/style_ranking_best_beer.png?raw=true" max-height="200" title="Average position of each beer, ranked by overall rating">   
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/style_ranking_popularity.png?raw=true" max-height="200" title="Average position of each beer, ranked by number of reviews">
 </p>
+
+For instance, Sour Ale is the best rated beer followed by Stout. For all climates apart from Csb and Dfc where it is Porter, the third best rated beer is IPA. On the other hand, the most popular beers are very different from the best rated beers with IPA in first place and Pale Ale in second. Variability is also low and only affects ranks 3-8. 
 
 Indeed, when looking at the average position of each beer style, Sour Ale is first with 1.0, followed by Stout with 2.0, IPA with 3.2 and Porter with 3.8. However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact 5.4. The top four are IPA with 1.0, Pale Ale with 2.0, Brown Ale at 3,3 and Porter at 3.7. This means that the most popular beer is not necessarily the most preferred. 
 
@@ -195,50 +197,62 @@ In order to do so, let’s study the ABV rating for each beer and find possible 
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_boxplot.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
 </p>
 
-As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00°, and half are contained in the [5.4°, 8.0°] range. We want to know how this distribution differs in the different climate categories. 
+As shown on the boxplot, the rated beers are centered around a mean ABV of 7.0°, and half are contained in the [5.4°, 8.0°] range. We want to know how this distribution differs in the different climate categories. 
 
 First, we compare the popularity and preference of the beers in the different climate conditions based on their ABV. From the grouped climates, we find the three most liked beer styles and the three most reviewed. 
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_boxplot.png?raw=true" width="200" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4"> 
 </p>
 
-By looking at the two U.S. maps here above, we can see that there is variation in the abv average between the best beers and the most reviewd beers. It results that for the preferred beers the abv mean is higher than for the most populars. cIn both cases, we can ob
-abv_map_climate.pngin the abv , d to be easily interpreted. We therefore look at the three disctict categories. The ABV mean is significantly different across the climates (between 0.4% and 1%) which means that users in different climates drink beers with diverse levels of alcohol. 
+By looking at the two U.S. maps here above, we can see that there is variation in the ABV average between the best beers and the most reviewed beers. It results that for the preferred beers the ABV mean is higher than for the most populars. In both cases, we can observe a variability across the climates but again, too many climates at a time make the results hard to interpret. We will therefore analyse the three climate levels separately.
 
-
-We can also note that the three most liked beers are always out of five from the original ten styles. For the most reviewed, these are only four styles out of the total 10 and are different than the 5 most liked. We indeed find that there is a statistical difference between the best beer and the most reviewed beer in each climate. This means that the most drunken beers are different than the types of beer preferred. 
+It is to be noted that for the three next plots, the range of the colorbar are not equals on the left and right plots. This was chosen to better visualize the differences inside of each plots and because the average ABV of the best beers are always higher than for the most reviewed ones.
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_scheme.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">   
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_scheme.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4"> 
 </p>
 
-When observing the climate schemes, we can notice that both the best rated beers and the most reviewed beers have a higher ABV in a temperate climate than a dry one. The type of curves and slopes are similar to the previous analysis for the average rating as a function of the ABV. This could be further investigated to find a possible correlation between the ABV and rating given as a function of the climate scheme. 
+The resulting plots show a smaller ABV for the users living in a dry climate than for the ones living in a temperate or in a continental climate. This is true for both the best beers and the most reviewed beers. 
 
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_temperature.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4"> 
-</p>
+This seems counterintuitive as one could think people living in a colder climate drink beers that are lighter and not too alcoholic to create a warming sensation, whereas in a dry climate they drink beers with a higher ABV to provide a sensation of coziness. But an important point to be noted is that in our dataset, the only climate considered to be dry is a cold semi-arid climate, it does not opposite itself with the next analysis.
 
-For the seasonal precipitation groups, the best beers have a higher ABV in locations without a dry season than in those with. Again, in this case, curves and slopes are similar to previous cases for the average rating of ABV. In contrast, we can notice that, for the most reviewed beers, there is an increase in ABV for regions with dry seasons. We could further analyse the overall rating in terms of the ABV and seasonal precipitation. 
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_precipitation.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4"> 
 </p>
 
-Lastly, when observing the heat levels of the different climates, we obtain the same type of curves and slopes as in the previous case for the average rating for the best beers. The average of the abv of the three best beers is higher for locations with hot summers, slightly less for warm summers and substantially less for cold summers. For the most reviewed beer, again hot summer has a higher abv but for warm and cold we have the same abv. A further investigation can be performed to find a correlation between the ABV and rating given.
+For the seasonal precipitation groups, the best beers have a higher ABV in locations without a dry season than in those with. In contrast, we can notice that, for the most reviewed beers, there is an increase in ABV for regions with dry seasons, but the difference is not as big as for the best beers.
 
-### Correlation between ABV and rating 
+One could assume that beers with less alcohol are more appreciated in dry season because they are more refreshing. However, this is not true for the most reviewed beers. 
 
-As we notice that most climate factors have a similar trend with the rating in terms of the ABV of the beer types, we are curious to know if these ratings depend on the climate factor or rather simply on the ABV. We are therefore looking for a correlation between the ABV and rating. 
+These results could be mitigated by some confounders, mostly one can notice that the separation is East-West and there are way more reviews on the East coast than on the West coast. This could be due to the fact that the East coast is more populated than the West coast. Therefore, we cannot conclude that the climate is the only factor that influences the ABV of the beers.
 
-weird results, to be done further
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_temperature.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4"> 
+</p>
+
+Lastly, when observing the temperature of summer, the ABV consummed is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. The variation is also the biggest among the different climate categories.
 
 
 
+### Analysis of ABV
+
+In all cases, we can notice that there is a small difference in ABV means. The typical differences is around 0.1° and the highest variation for one chosen climate category is when we compare hot and cold summer. 
+
+The first main result we find is that U.S. citizens prefer beers with higher ABV compared to the most drank beers. This is true for all climate categories. Indeed, in the cases of the best beers, their average ABV was always above the global mean of 7°.
+
+Then, we find that the ABV is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. This could seem opposite to the conclusions of the study by the University of Pittsburgh. However, we have to keep in mind that we are not studying the alcohol consumption but rather the alcohol level of the beers. Therefore, this could mean that people living in colder climates drink more beers but with a lower ABV.
+
+# Conclusion
+
+Part about always small differences but because americans are americans wether they live in a cold or hot climate.
+
+Part about possible confounders to investigate: money, fournisseur (what kind of beers are sold where)
 
 [1] https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF \
 [2] https://weatherandclimate.com/united-states
