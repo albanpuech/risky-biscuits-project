@@ -11,18 +11,18 @@
 
 ### Beer Reviews
 
-If you live in Switzerland and have ever been to South America, you have probably noticed that people are more outgoing, warmer and approachable there. Well, that’s not just your perception : the climate you live in really does shape your personality. In fact, research shows that if you live in a warmer climate, you tend to have greater social tendencies, emotional stability, extroversion, and openness to new experiences ([Wei et al., 2017](https://www.nature.com/articles/s41562-017-0240-0)). 
+If you live in Switzerland and have ever been to South America, you have probably noticed that people are more outgoing, warmer and approachable there. Well, that’s not just your perception: the climate you live in really does shape your personality. In fact, research shows that if you live in a warmer climate, you tend to have greater social tendencies, emotional stability, extroversion, and openness to new experiences ([Wei et al., 2017](https://www.nature.com/articles/s41562-017-0240-0)). 
 
-If climate makes us different there is for sure something that we all share : our love for beers. Yes, the amber elixir that brings people together across continents. But, hang on, could there be a mysterious link between the climate that molds our personalities and the way we savor our beers? 
+If climate makes us different there is for sure something that we all share: our love for beer. Yes, the amber elixir that brings people together across continents. But, hang on, could there be a mysterious link between the climate that molds our personalities and the way we savor our beers? 
 
-In order to answer this enigmatic question we need data ! Thankfully for us, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. 
+In order to answer this enigmatic question we need data! Luckily, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. 
 
 <p align="center">
   <img src="https://cdn.beeradvocate.com/im/meta/beeradvocate-meta-respect-beer-logo.png" width="100" title="Example review coming from Beer advocate"> 
     <img src="https://www.ratebeer.com/images/logos/login-logo.png" width="100" title="Example review coming from Beer advocate">
 </p>
 
-From these plateforms, we gathered 1.6M reviews from 22.8K american users evaluating 134 different beers [1]. 
+From these platforms, we gathered 1.6M reviews from 22.8K American users evaluating 134 different beers ([dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF)). 
 A complete review looks like this:
 
 <p align="center">
@@ -34,16 +34,16 @@ A review contains the following information:
 - The **style** of the beer.
 - The **alcohol** by volume.
 - The **name** of the breweries and its location.
-- the **username** of the author and its location.
-- a **rating** incidated in red, that ranges from 1 to 5.
-- The difference, denoted **rDev**, between the rating given by the user and the average rating of the beer considering all reviews it received.
-- A list of 5 scores: **look**, **smell**, **taste**, **feel**, and **overall**. Note that the Rating is not directly obtained from these, nor is the "overall" related to the other subscores. These also range from 1 to 5.
+- The **username** of the author and its location.
+- A **rating** indicated in red, that ranges from 1 to 5.
+- The relative difference, denoted **rDev**, between the rating given by the user and the average rating of the beer considering all reviews it received.
+- A list of 5 scores: **look**, **smell**, **taste**, **feel**, and **overall**.  These also range from 1 to 5. Note that the **rating** is not directly obtained from these, nor is the "overall" related to the other scores.
 - The **text** of the review.
 - The **date** and **hour** when the review was posted.
 
 ### Climate Data
 
-As we are interested in studying the impact of climate on the beer reviews, we have to choose what climate data to use. While many climate classification exist, we'll be using the popular Köppen climate classification. 
+As we are interested in studying the impact of climate on the beer reviews, we have to choose what climate data to use. While many climate classifications exist, we'll be using the popular Köppen climate classification. 
 
 <p align="center">
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/us%20climate.png?raw=true" width="600" title="Climate US">
@@ -79,11 +79,11 @@ We can also look at the other scores:
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/climate_average_ratings.png?raw=true" height="300" title="Subratings of all beers per climate">
 </p>
 
-Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates. 
- 
-From this plot, even though all ratings have a  difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
+Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates.
 
-For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
+From this plot, even though all ratings have a difference, we can see that each sub-rating follows the same trends. This means that if there were an influence of climate on the scores, climate would impact
+
+For instance, the Csa and Dfa climates always has a mean rating above both the micro average. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
 
 Looking at the plot of the climates zones in the US, we can see that Dsb and Dsc only cover two states: Idaho and Washington. We can also check the number of reviews per climate
 
@@ -122,8 +122,7 @@ And at the summer temperature:
 </p>
 
 
-Climate scheme: 
-Hot and warm summers show very similar average scores. There however is a much larger difference with cold summer which shows lower scores across all categories.
+Climate scheme: Hot and warm summers show very similar average scores. There however is a much larger difference with cold summer which shows lower scores across all categories.
 
 ### Conclusion on climate and reviews
 
@@ -158,6 +157,58 @@ First, let's take a look at the overall ratings given to each beer by the respec
 </p>
 
 There are indeed significant variabilities between the overall score of the various beer styles by the different climates, leading us to think that people from certain climates prefer certain beer styles. However, when ranking the best beers per climate group, we could immediately notice that there is very little variability between the climate groups. 
+
+Maybe the variability lies in the climate subgroups. To look into this, we computed the best ranked and the most popular beers per climate subgroup. Here are the results :
+|             |  Scheme   |   Scheme     | Scheme   |
+|-------------|-----------|--------------|----------|
+|  Rank       | Temperate | Continental  |   Dry    |
+|-------------|-----------|--------------|----------|
+| **1st**     | Sour Ale  |  Sour Ale    | Sour Ale | 
+| **2nd**     |   Stout   |    Stout     |  Stout   |
+| **3rd**     |    IPA    |     IPA      |   IPA    |
+| **4rd**     |   Porter  |    Porter    |  Porter  |
+| **5rd**     | Brown Ale |  Brown Ale   |Brown Ale |
+ 
+ 
+
+<table style="border-collapse: collapse; border: 2px double black;">
+  <tr>
+    <td></td>
+    <td colspan="3">Scheme</td>
+    <td colspan="2">Precipitation</td>
+    <td colspan="3">Temperature</td>
+  </tr>
+  <tr>
+    <td><b>Rank</b></td>
+    <td>Temperate</td>
+    <td>Continental</td>
+    <td>Dry</td>
+    <td>Without dry season</td>
+    <td>With dry season</td>
+    <td>Hot summer</td>
+    <td>Warm summer</td>
+    <td>Cold summer</td>
+
+  </tr>
+  <tr>
+    <td>1st</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+    <td>Sour Ale</td>
+  </tr>
+
+  <tr>
+  <td>2nd</td>
+
+  </tr>
+</table>
+
+
 
 <p align="center">
   <br>
