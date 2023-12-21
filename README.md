@@ -242,6 +242,8 @@ Maybe the variability lies in the climate subgroups. To look into this, we compu
   </tr>
 </table>
 
+ <br><br><br>
+
 <table style="border-collapse: collapse; border: 2px double black;">
   <tr>
     <td></td>
@@ -261,6 +263,7 @@ Maybe the variability lies in the climate subgroups. To look into this, we compu
     <td><b><font color="Peru">Cold summer</font></b></td>
 
   </tr>
+ 
 
   <tr>
     <td>1st</td>
@@ -368,14 +371,14 @@ First, we compare the popularity and preference of the beers in the different cl
 
 By looking at the two U.S. maps above, we can see that there is a variation in the ABV average between the best beers and the most reviewed beers. It results that the ABV mean of the three favorite beers is higher than the one of the three most popular ones. We can observe a variation across the climates but again, too many climates at a time make the results hard to interpret. We will therefore analyze the three climate levels separately.
 
-It is to be noted that for the three next plots, the ranges of the colorbars are not equal on the left and right plots. This was chosen to better visualize the differences within each plot and because the average ABV of the best beers are always higher than for the most reviewed ones.
+It is to be noted that for the three next plots, the ranges of the colorbars are not equal on the left and right plots. This was chosen to better visualize the differences within each plot and because the average ABV of the best beers is always higher than for the most reviewed ones.
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_scheme.png?raw=true" height="300"> 
 </p>
 
-The resulting plots show a smaller ABV for the users living in a dry climate than for the ones living in a temperate or in a continental climate. This is true for both the best beers and the most reviewed beers. 
+The resulting plots show a smaller ABV for the users living in a dry climate than for the ones living in a temperate or in continental climates. This is true for both the best beers and the most reviewed beers. 
 
 This seems counterintuitive as one could think people living in a colder climate drink beers that are lighter and not too alcoholic to create a warming sensation, whereas in a dry climate they drink beers with a higher ABV to provide a sensation of coziness. But an important point to be noted is that in our dataset, the only climate considered to be dry is a cold semi-arid climate, it does not opposite itself with the next analysis.
 
