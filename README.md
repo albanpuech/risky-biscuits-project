@@ -66,7 +66,7 @@ Now that we have lots of data, let's dive into it! 🤿
 
 ## 🍻 Climate and beers
 
-To explore how climates could impact the appreciation of beer, we first look at the general distribution of of each scores per climate. We first look at the average "overall" score per climates. We also plot the show the micro-average:
+To explore how climates could impact the appreciation of beer, we first look at the general distribution of each score per climate. We first look at the average "overall" score per climate. We also show the micro-average:
 
 <p align="center">
   <br>
@@ -79,7 +79,9 @@ We can also look at the other scores:
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/climate_average_ratings.png?raw=true" height="300" title="Subratings of all beers per climate">
 </p>
 
-From this plot, even though all ratings have a significant difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
+Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates. 
+ 
+From this plot, even though all ratings have a  difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
 
 For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. We could hypothesise that this climate would make people less incline to drink beers and, when they do, have higher standards because they drink it for its specific content. Indeed, we can see that the Dsc and Dsb climates give a fewer number of reviews whereas all of the hot summer climates have much more reviews. 
 
