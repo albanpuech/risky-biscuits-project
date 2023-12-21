@@ -79,20 +79,20 @@ We can also look at the other scores:
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/climate_average_ratings.png?raw=true" height="300" title="Subratings of all beers per climate">
 </p>
 
-Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates.
 
-From this plot, even though all ratings have a difference, we can see that each sub-rating follows the same trends. This means that if there were an influence of climate on the scores, climate would impact
 
-For instance, the Csa and Dfa climates always has a mean rating above both the micro average. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
+From this plot, even though all ratings have a difference, we can see that each sub-rating follows the same trends. This means that if there is an influence of climate on the scores, its impact is rather the same across all score categories.
 
-Looking at the plot of the climates zones in the US, we can see that Dsb and Dsc only cover two states: Idaho and Washington. We can also check the number of reviews per climate
+Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates. Indeed, a few climates show very low average scores, while others show very high ones. This is the case of Csa and Dfa. These climates have a hot summer which might make the users more inclined to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
+
+Looking at the plot of the climate zones in the US, we can see that Dsb and Dsc only cover two states: Idaho and Washington. We can also check the number of reviews per climate
 
 <p align="center">
   <br>
   <img src="assets\img\Number of ratings per climate.png" height="400" title="Average score for climate schemes">
 </p>
 
-We thus have to group the climates zones together if we want to have enough beers in each of the groups. This is what we are going to explore next!
+We thus have to group climate zones together if we want to have enough beers in each of the groups. This is what we are going to explore next!
 
 ### Climate factors and beers
 
@@ -122,7 +122,7 @@ And at the summer temperature:
 </p>
 
 
-Climate scheme: Hot and warm summers show very similar average scores. There however is a much larger difference with cold summer which shows lower scores across all categories.
+Hot and warm summers show very similar average scores. There however is a much larger difference with cold summer which shows lower scores across all categories.
 
 ### Conclusion on climate and reviews
 
@@ -130,9 +130,9 @@ Climate scheme: Hot and warm summers show very similar average scores. There how
 
 - Climate is known to influence personality traits, and it may also influence beer preferences.
 
-- What we have seen is that areas with hot summers also have larger beer scores, which could may be because of the social and refreshing aspects of beer consumption in warmer areas
+- What we have seen is that areas with hot summers also have larger beer scores, which could be because of the social and refreshing aspects of beer consumption in warmer areas
 
-- We have also observed that colder climates are associated to lower scores, which may come from the fact that that people in colder climates have higher expectations or different standards of beers. This may be because they put more emphasis on the quality or taste of beers. 
+- We have also observed that colder climates are associated with lower scores, which may come from the fact that that people in colder climates have higher expectations or different standards of beers. This may be because they put more emphasis on the quality or taste of beers. 
 
 - The appearance score was the most stable one across the difference climate regions, maybe because it is also the criteria that is the hardest to rate, as opposed to the palate and the taste that may have more importance than the other criterion.
 
@@ -174,9 +174,9 @@ Maybe the variability lies in the climate subgroups. To look into this, we compu
 <table style="border-collapse: collapse; border: 2px double black;">
   <tr>
     <td></td>
-    <td colspan="3">Scheme</td>
-    <td colspan="2">Precipitation</td>
-    <td colspan="3">Temperature</td>
+    <td colspan="3" align="center"><font color="skyblue">Scheme</font></td>
+    <td colspan="2" align="center">Precipitation</td>
+    <td colspan="3" align="center">Temperature</td>
   </tr>
   <tr>
     <td><b>Rank</b></td>
