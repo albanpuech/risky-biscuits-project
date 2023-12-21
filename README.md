@@ -180,14 +180,14 @@ Maybe the variability lies in the climate subgroups. To look into this, we compu
   </tr>
   <tr>
     <td><b>Rank</b></td>
-    <td>Temperate</td>
-    <td>Continental</td>
-    <td>Dry</td>
-    <td>Without dry season</td>
-    <td>With dry season</td>
-    <td>Hot summer</td>
-    <td>Warm summer</td>
-    <td>Cold summer</td>
+    <td><b>Temperate</b></td>
+    <td><b>Continental</b></td>
+    <td><b>Dry</b></td>
+    <td><b>Without dry season</b></td>
+    <td><b>With dry season</b></td>
+    <td><b>Hot summer</b></td>
+    <td><b>Warm summer</b></td>
+    <td><b>Cold summer</b></td>
 
   </tr>
   <tr>
