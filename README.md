@@ -366,7 +366,7 @@ First, we compare the popularity and preference of the beers in the different cl
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_climate.png?raw=true" height="300"> 
 </p>
 
-By looking at the two U.S. maps above, we can see that there is a variation in the ABV average between the best beers and the most reviewed beers. It results that the ABV mean of the three savourite beer have a higher ABV mean than the three most popular. It results that for the preferred beers the ABV mean is higher than for the most populars. In both cases, we can observe a variability across the climates but again, too many climates at a time make the results hard to interpret. We will therefore analyse the three climate levels separately.
+By looking at the two U.S. maps above, we can see that there is a variation in the ABV average between the best beers and the most reviewed beers. It results that the ABV mean of the three favorite beers is higher than the one of the three most popular ones. We can observe a variation across the climates but again, too many climates at a time make the results hard to interpret. We will therefore analyze the three climate levels separately.
 
 It is to be noted that for the three next plots, the range of the colorbar are not equals on the left and right plots. This was chosen to better visualize the differences inside of each plots and because the average ABV of the best beers are always higher than for the most reviewed ones.
 
