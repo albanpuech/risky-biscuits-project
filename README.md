@@ -8,6 +8,9 @@
 
 ## 🍻 Introduction
 
+
+### Beer Reviews
+
 If you live in Switzerland and have ever been to South America, you have probably noticed that people are more outgoing, warmer and approachable there. Well, that’s not just your perception : the climate you live in really does shape your personality. In fact, research shows that if you live in a warmer climate, you tend to have greater social tendencies, emotional stability, extroversion, and openness to new experiences ([Wei et al., 2017](https://www.nature.com/articles/s41562-017-0240-0)). 
 
 If climate makes us different there is for sure something that we all share : our love for beers. Yes, the amber elixir that brings people together across continents. But, hang on, could there be a mysterious link between the climate that molds our personalities and the way we savor our beers? 
@@ -15,7 +18,7 @@ If climate makes us different there is for sure something that we all share : ou
 In order to answer this enigmatic question we need data ! Thankfully for us, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. 
 
 <p align="center">
-  <img src="https://cdn.beeradvocate.com/im/meta/beeradvocate-meta-respect-beer-logo.png" width="100" title="Example review coming from Beer advocate"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <img src="https://cdn.beeradvocate.com/im/meta/beeradvocate-meta-respect-beer-logo.png" width="100" title="Example review coming from Beer advocate"> 
     <img src="https://www.ratebeer.com/images/logos/login-logo.png" width="100" title="Example review coming from Beer advocate">
 </p>
 
@@ -27,17 +30,20 @@ A complete review looks like this:
 </p>
 
 A review contains the following information:
-- The name of the beer
-- The style of the beer
-- The alcohol by volume
-- The name of the breweries and its location
-- the username of the author and its location 
-- a Rating incidated in red, that ranges from 1 to 5.
-- The difference between the Rating given by the user and the average rating of the beer considering all reviews it received 
-- A list of 5 scores: "look", "smell", "taste", "feel", and "overall". Note that the Rating is not directly obtained from these, nor is the "overall" related to the over subscores 
-The overall rating as well as the subratings (Aroma, Appearance, Taster, Palate) are assigned on a scale from 0 to 5, with 0 being the lowest and 5 the highest. Only the overall rating is obligatory when submitting a review.
+- The **name** of the beer.
+- The **style** of the beer.
+- The **alcohol** by volume.
+- The **name** of the breweries and its location.
+- the **username** of the author and its location.
+- a **rating** incidated in red, that ranges from 1 to 5.
+- The difference, denoted **rDev**, between the rating given by the user and the average rating of the beer considering all reviews it received.
+- A list of 5 scores: **look**, **smell**, **taste**, **feel**, and **overall**. Note that the Rating is not directly obtained from these, nor is the "overall" related to the other subscores. These also range from 1 to 5.
+- The **text** of the review.
+- The **date** and **hour** when the review was posted.
 
-What about the climate ? While many climate classification exist, we'll be using the popular Köppen climate classification. 
+### Climate Data
+
+As we are interested in studying the impact of climate on the beer reviews, we have to choose what climate data to use. While many climate classification exist, we'll be using the popular Köppen climate classification. 
 
 <p align="center">
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/us%20climate.png?raw=true" width="600" title="Climate US">
@@ -60,15 +66,14 @@ Now that we have lots of data, let's dive into it! 🤿
 
 ## 🍻 Climate and beers
 
-
-To explore how climates could affect the appreciation of beer, we first look at the general distribution of scores per climate for each subrating. The following plot shows the average subrating per climate group in comparison to the micro average, the mean of all the overall averages for all beers. 
+To explore how climates could impact the appreciation of beer, we first look at the general distribution of of each scores per climate. We first look at the average "overall" score per climates. We also plot the show the micro-average:
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/overall_climate.png?raw=true" height="300" title="Subratings of all beers per climate">
 </p>
 
-
+We can also look at the other scores:
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/climate_average_ratings.png?raw=true" height="300" title="Subratings of all beers per climate">
