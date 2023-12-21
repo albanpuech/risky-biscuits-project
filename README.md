@@ -1,24 +1,18 @@
 
 
-# Pints and Patterns: How Climate Shapes U.S. Beer Ratings
+# Cheers to Latitude: A Journey Through Climate and Beer preferences
 
 
 ![image](https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/baneer.png?raw=true)
 
 
 ## 🍻 Introduction
-Welcome to "Pints and Patterns: How Climate Shapes U.S. Beer Ratings"!
 
-Get ready for a tasty and refreshing adventure! In this project, we are going to pop the cap off the worlds of beers and climate! 
-Who hasn't dreamed of a cold beer on a warm summer's evening?  This question made us wonder: Maybe our beer tastes change with the climate we're in!
-We will take you on an exciting journey to explore how the sunny beaches, snowy mountains, and everything in between across the U.S. influence the way Americans rate their favorite beers!
+If you live in Switzerland and have ever gone to South America, you have probably noticed that people are more outgoing, warmer and approachable there. Well, that’s not just your perception : the climate you live in really does shape your personality. In fact, research shows that if you live in a warmer climate, you tend to have greater social tendencies, emotional stability, extroversion, and openness to new experiences ([Wei et al., 2017](https://www.nature.com/articles/s41562-017-0240-0)). 
 
-The questions we will be answering include:
-- Is there a correlation between climate and the overall beer reviews?
-- Does climate influence people's demand for taste, palate and aroma?
-- How does beer ratings change across seasons in the different climate areas?
+There are probably more things that make us different and what about things that we have in common? For example, no matter where you are from, you probably drink beer : yes, the amber elixir that brings people together across continents. But, hang on, could there be a mysterious link between the climate that molds our personalities and the way we savor our beers? 
 
-In order to answers these questions we need data ! Thankfully for us, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. From these plateforms, we gathered 1.6M reviews from 22.8K american users evaluating 134 different beers [1]. 
+In order to answers this enigmatic questions we need data ! Thankfully for us, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. From these plateforms, we gathered 1.6M reviews from 22.8K american users evaluating 134 different beers [1]. 
 A complete review looks like this :
 
 <p align="center">
@@ -27,11 +21,7 @@ A complete review looks like this :
 
 The overall rating as well as the subratings (Aroma, Appearance, Taster, Palate) are assigned on a scale from 0 to 5, with 0 being the lowest and 5 the highest. Only the overall rating is obligatory when submitting a review.
 
-What about the climate ? While many climate classification exist, we'll be using the popular Köppen climate classification. Let's look at the climates in the US.
-
-map of US climate, possibly interactive ? whith 
-
-10 different climates are present in the US : 
+What about the climate ? While many climate classification exist, we'll be using the popular Köppen climate classification. Let's look at the climates in the US. There are 10 different climates in the US. These are:
 
 | Climate | Seasonal precipitation                 | Temperature             |
 |--------------------------------------|----------------------|------------------|
@@ -42,9 +32,9 @@ map of US climate, possibly interactive ? whith
 |                                           | s (Dry summer)  | b (Warm summer)  |
 |                                           |                 | c (Cold summer)  |
 
-Now that we have lots of data, let's dive into it !
+MAP OF US CLIMARE; POSSIBLY INTERACTIVE?
 
-
+Now that we have lots of data, let's dive into it!
 
 <!-- ## 🍻 How does the average ratings of the 5 most rated beers in the US change across the climate regions?
 
@@ -95,10 +85,9 @@ What do we see in this table? Well... 3 beers have a mean rating that significan
 
 -->
 
+<!-- ## 🍻 Climate and Average Beer Scores
 
-## 🍻 Climate and Average Beer Scores
-
-One first step into exploring how climates and beer scores are related would be to look closer at the different sub-scores that, put together, give the beer ratings that we have been looking at up until now!
+One first step into exploring how climates and beer scores are related would be to look closer at the different sub-scores that, put together, give the beer ratings that we have been looking at up until now.
 
 On Beer Advocate as on Beer Ratings, users are asked to score beers on the four following aspects:
 
@@ -176,7 +165,60 @@ It also looks like appearance is less affected by the HEAT LEVEL compared to for
 Just by plotting the overall score it seems like the hotter it is the more people like beer
 Even when plotting all the other parameters (tate, appearance,...) it seems like people prefer beer when in a hot environment
 
-Observation: in all the conditions the variation between the ratings are very little (between 0.02-0.06). The difference is that with this approach we analyzed groups of beers much bigger (combination of different climates) compared to what we did before when we looked at the average rating for each different climate. This can explain the fact that before, the average ratings across the climates varied more (about 0.3) compared to this approach.
+Observation: in all the conditions the variation between the ratings are very little (between 0.02-0.06). The difference is that with this approach we analyzed groups of beers much bigger (combination of different climates) compared to what we did before when we looked at the average rating for each different climate. This can explain the fact that before, the average ratings across the climates varied more (about 0.3) compared to this approach. -->
+
+## 🍻 Climate and beers
+
+### Paragraphe intro
+
+To explore how climates could affect the appreciation of beer, we first look at the general distribution of scores per climate for each subrating. The following plot shows the average subrating per climate group in comparison to the macro and micro averages. The macro average is the mean of the overall averages per climate for all beers
+whereas the micro average is the mean of all the overall averages for all beers. 
+
+ADD PLOT HERE
+
+From this plot, even though all ratings have a significant difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
+
+For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. We could hypothesise that this climate would make people less incline to drink beers and, when they do, have higher standards because they drink it for its specific content. 
+
+PLOT: NUMBER OF RATINGS PER CLIMATE
+
+Indeed, we can see that the Dsc and Dsb climates give a fewer number of reviews whereas all of the hot summer climates have much more reviews. 
+
+O
+
+analyse the plot + conclusion: variations d’un climat a l’autre
+
+### Climate factors and beers
+
+As we cannot see a clear pattern between climates and sub-ratings, we decide to group the climate zones into larger groups based on its scheme, seasonal precipitation, and summer heat level. We assign the different climates to the different categories as followed:
+
+| climate | scheme      | seasonal_precipitation | heat_level  |
+|---------|-------------|------------------------|-------------|
+| Cfa     | Temperate   | without dry season     | hot summer  |
+| Dfb     | Continental | without dry season     | warm summer |
+| Dfa     | Continental | without dry season     | hot summer  |
+| Csa     | Temperate   | with dry season        | hot summer  |
+| Dsb     | Continental | with dry season        | warm summer |
+| Dfc     | Continental | without dry season     | cold summer |
+| Csb     | Temperate   | with dry season        | warm summer |
+| Bsk     | Dry         | with dry season        | cold summer |
+| Cfb     | Temperate   | without dry season     | warm summer |
+| Dsc     | Continental | with dry season        | cold summer |
+
+
+Climate scheme: 
+Hot and warm summers are very similar, but much bigger difference with cold summer which has lower ratings in all categories  => different interpretations possible, one could be that …
+Appearance is always similarly rated
+Comparison with overall trend over the months of the year 
+
+Climate precipitation:
+Climate temperature:
+
+Pas juste géographique, parce qu’avec les nouveaux grouping, il y a toujours des trends (meme genre de résultats apparents) => role positif du climat (il joue un role dans l’appreciation)
+
+Il faut rester ouvert a l’hypothèse que c’et un role indirect -> climat joue un role sur la manière dont on vit et du coup sur la manière dont on apprécie la bière (ex. Dans climats chauds on ferait plus de fetes et du coup on boit plus de bière)
+
+Pas des grandes differences, on s’y attendait car plus de points communs entre deux américains meme si dans climats différents => climat dosent’t define you, it’s your American citizenship 
 
 ## 🍻 Climate and styles of beers 
 
@@ -186,7 +228,7 @@ Having unraveled the preliminary layers of our investigation into the impact of 
 
 In order to make this mapping, we need to map each specific type of beer to a general style. This uses a mapping done manually which relates each beer to a general style of beer according to an article by EHL (https://hospitalityinsights.ehl.edu/beer-types). The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale. Here is the overall ranking of each beer type for the whole US.
 
-PLOT BEER GLASS RANKING PER TYPE
+WORD CLOUD OVERALL MEAN
 
 We are interested in the popularity of the beers as well as the preferred beer. Therefore we approximate the popularity of a given beer by the number of reviews it received, although it is important to note that these are slightly different. Indeed, we cannot infer the exact number of beers drank, but, since we have a big enough sample, we can approximate it by the number of reviews received.
 
@@ -200,17 +242,11 @@ First, let's take a look at the overall ratings given to each beer by the respec
 - macro average: mean of the overall averages per climate for all beers
 - micro average: mean of all the overall averages 
 
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/88210c08-2bd3-4f0f-821d-10912938825a raw=true" width="1000" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
-</p>
+PLOT: OVERALL BEER RANKINGS PER BEER STYLE AS A FN OF CLIMATE
 
 This plot can make us think that there are significant variabilities between the approval of the various beer styles by the different climates. Therefore, we perform a ranking of the beer styles and most popular beer styles to investigate this. When ranking the best beers per climate group, however, we can immediately notice that there is very little variability between the climate groups! For instance, Sour Ale is the common best rated beer followed by Stout. For all climates apart from Csb and Dfc where it is Porter, the third best rated beer is IPA. On the other hand, the most popular beers are very different from the best rated beers with IPA in first place and Pale Ale in second. Variability is also low and only affects ranks 3-8. 
 
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/05e4d3c0-4a26-4752-9fb0-629a64cfbe57 raw=true" width="700" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
-</p>
+PLOT BEER GLASS RANKING PER TYPE
 
 Indeed, when looking at the average position of each beer style, Sour Ale is first with 1.0, followed by Stout with 2.0, IPA with 3.2 and Porter with 3.8. However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact 5.4. The top four are IPA with 1.0, Pale Ale with 2.0, Brown Ale at 3,3 and Porter at 3.7. This means that the most popular beer is not necessarily the most preferred. 
 
