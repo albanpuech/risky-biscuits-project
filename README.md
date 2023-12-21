@@ -195,7 +195,7 @@ First, we compare the popularity and preference of the beers in the different cl
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Mean%20abv%20of%20the%203%20most%20reviewed%20beers%20for%20each%20climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/Mean%20abv%20of%20the%20best%203%20beers%20for%20each%20climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_climate.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4"> 
 </p>
 
 By looking at the two U.S. maps here above, we can see that there is variation in the abv average between the best beers and the most reviewd beers. It results that for the preferred beers the abv mean is higher than for the most populars. cIn both cases, we can observe a variability across the climates but again, too many climets at a time make the results har
