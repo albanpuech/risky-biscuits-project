@@ -21,7 +21,13 @@ A complete review looks like this :
 
 The overall rating as well as the subratings (Aroma, Appearance, Taster, Palate) are assigned on a scale from 0 to 5, with 0 being the lowest and 5 the highest. Only the overall rating is obligatory when submitting a review.
 
-What about the climate ? While many climate classification exist, we'll be using the popular Köppen climate classification. Let's look at the climates in the US. There are 10 different climates in the US. These are:
+What about the climate ? While many climate classification exist, we'll be using the popular Köppen climate classification. 
+
+<p align="center">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/us%20climate.png?raw=true" width="600" title="Climate US">
+</p>
+
+Let's look at the climates in the US. There are 10 different climates in the US. These are:
 
 | Climate | Seasonal precipitation                 | Temperature             |
 |--------------------------------------|----------------------|------------------|
@@ -32,7 +38,7 @@ What about the climate ? While many climate classification exist, we'll be using
 |                                           | s (Dry summer)  | b (Warm summer)  |
 |                                           |                 | c (Cold summer)  |
 
-MAP OF US CLIMARE; POSSIBLY INTERACTIVE?
+
 
 Now that we have lots of data, let's dive into it!
 
@@ -174,45 +180,39 @@ Observation: in all the conditions the variation between the ratings are very li
 To explore how climates could affect the appreciation of beer, we first look at the general distribution of scores per climate for each subrating. The following plot shows the average subrating per climate group in comparison to the macro and micro averages. The macro average is the mean of the overall averages per climate for all beers
 whereas the micro average is the mean of all the overall averages for all beers. 
 
-ADD PLOT HERE
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/climate_average_ratings.png?raw=true" height="300" title="Subratings of all beers per climate">
+</p>
 
 From this plot, even though all ratings have a significant difference, we can see that each subrating follows the same trends. In other words, each climate seems to rate the beers in a certain range for all of the subratings. This means that each climate has a certain coherence in the ratings it gives which shows its general appreciation of beers compared to one certain aspect of it. 
 
-For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. We could hypothesise that this climate would make people less incline to drink beers and, when they do, have higher standards because they drink it for its specific content. 
+For instance, the Csa and Dfa climates always has a mean rating above both the micro and macro averages. These climates have a hot summer which might make the users more incline to appreciate beers in general because of the social aspect and simple appreciation of a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc, with only Idaho, has a cold summer. We could hypothesise that this climate would make people less incline to drink beers and, when they do, have higher standards because they drink it for its specific content. Indeed, we can see that the Dsc and Dsb climates give a fewer number of reviews whereas all of the hot summer climates have much more reviews. 
 
 PLOT: NUMBER OF RATINGS PER CLIMATE
 
-Indeed, we can see that the Dsc and Dsb climates give a fewer number of reviews whereas all of the hot summer climates have much more reviews. 
-
-O
-
-analyse the plot + conclusion: variations d’un climat a l’autre
+Overall, there are significant differences in the appreciation of beers between climate groups, but the pattern in itself is not clear. Maybe some trends are enhanced when grouping the climate zones into larger groups? Let's take a look!
 
 ### Climate factors and beers
 
-As we cannot see a clear pattern between climates and sub-ratings, we decide to group the climate zones into larger groups based on its scheme, seasonal precipitation, and summer heat level. We assign the different climates to the different categories as followed:
+In this part, we regroup the climate zones based on their scheme, seasonal precipitation, and summer heat level. 
 
-| climate | scheme      | seasonal_precipitation | heat_level  |
-|---------|-------------|------------------------|-------------|
-| Cfa     | Temperate   | without dry season     | hot summer  |
-| Dfb     | Continental | without dry season     | warm summer |
-| Dfa     | Continental | without dry season     | hot summer  |
-| Csa     | Temperate   | with dry season        | hot summer  |
-| Dsb     | Continental | with dry season        | warm summer |
-| Dfc     | Continental | without dry season     | cold summer |
-| Csb     | Temperate   | with dry season        | warm summer |
-| Bsk     | Dry         | with dry season        | cold summer |
-| Cfb     | Temperate   | without dry season     | warm summer |
-| Dsc     | Continental | with dry season        | cold summer |
-
+PLOT: AVERAGE SCORE CLIMATE SCHEME
 
 Climate scheme: 
 Hot and warm summers are very similar, but much bigger difference with cold summer which has lower ratings in all categories  => different interpretations possible, one could be that …
 Appearance is always similarly rated
 Comparison with overall trend over the months of the year 
 
-Climate precipitation:
-Climate temperature:
+PLOT: AVERAGE SCORE CLIMATE PRECIPITATION
+
+Climate precipitation analysis & interpretation
+
+PLOT: AVERAGE SCORE CLIMATE TEMPERATURE
+
+Climate temperature analysis & interpretation
+
+### Partial conclusion and link to next part
 
 Pas juste géographique, parce qu’avec les nouveaux grouping, il y a toujours des trends (meme genre de résultats apparents) => role positif du climat (il joue un role dans l’appreciation)
 
@@ -228,7 +228,10 @@ Having unraveled the preliminary layers of our investigation into the impact of 
 
 In order to make this mapping, we need to map each specific type of beer to a general style. This uses a mapping done manually which relates each beer to a general style of beer according to an article by EHL (https://hospitalityinsights.ehl.edu/beer-types). The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale. Here is the overall ranking of each beer type for the whole US.
 
-WORD CLOUD OVERALL MEAN
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/styles_beer.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+</p>
 
 We are interested in the popularity of the beers as well as the preferred beer. Therefore we approximate the popularity of a given beer by the number of reviews it received, although it is important to note that these are slightly different. Indeed, we cannot infer the exact number of beers drank, but, since we have a big enough sample, we can approximate it by the number of reviews received.
 
@@ -236,17 +239,20 @@ For the computation of the best beers, we first created a new dataframe for each
 
 ### Climate and beer style 
 
-First, let's take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added three different averages. These are: 
+First, let's take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added the micro average.
 
-- beer macro average: mean of the overall averages per climate for each beer type
-- macro average: mean of the overall averages per climate for all beers
-- micro average: mean of all the overall averages 
-
-PLOT: OVERALL BEER RANKINGS PER BEER STYLE AS A FN OF CLIMATE
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/beer_type_average_ratings.png?raw=true" height="300" title="Overall beer rankings per beer style as a function of the climate">   
+</p>
 
 This plot can make us think that there are significant variabilities between the approval of the various beer styles by the different climates. Therefore, we perform a ranking of the beer styles and most popular beer styles to investigate this. When ranking the best beers per climate group, however, we can immediately notice that there is very little variability between the climate groups! For instance, Sour Ale is the common best rated beer followed by Stout. For all climates apart from Csb and Dfc where it is Porter, the third best rated beer is IPA. On the other hand, the most popular beers are very different from the best rated beers with IPA in first place and Pale Ale in second. Variability is also low and only affects ranks 3-8. 
 
-PLOT BEER GLASS RANKING PER TYPE
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/style_ranking_best_beer.png?raw=true" height="300" title="Average position of each beer, ranked by overall rating">   
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/style_ranking_popularity.png?raw=true" height="300" title="Average position of each beer, ranked by number of reviews">
+</p>
 
 Indeed, when looking at the average position of each beer style, Sour Ale is first with 1.0, followed by Stout with 2.0, IPA with 3.2 and Porter with 3.8. However, when observing the most rated beers, Sour Ale is not even in the top three! Its average position is in fact 5.4. The top four are IPA with 1.0, Pale Ale with 2.0, Brown Ale at 3,3 and Porter at 3.7. This means that the most popular beer is not necessarily the most preferred. 
 
@@ -273,7 +279,7 @@ As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00,
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/assets/95092676/5c94d2f5-e246-46d0-862b-04721335acdb raw=true" width="800" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_styles.png?raw=true" width="800" title="Horizontal boxplot of the ABV per beer style">
 </p>
 
 INTERPRETATION
