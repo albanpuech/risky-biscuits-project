@@ -127,7 +127,7 @@ Pas des grandes differences, on s’y attendait car plus de points communs entre
 
 ## 🍻 Climate and styles of beers 
 
-Having unraveled the preliminary layers of our investigation into the impact of climate trends on beer reviews, we now pivot our analytical lens towards the intricate world of beer types. The initial exploration revealed a fascinating tapestry of how overall ratings, taste, aroma, appearance, and smell are influenced by varying climatic conditions. However, understanding the nuanced relationship between climate and beer preference necessitates a deeper dive into the categorical realm of beers. Do users from certain climates thrive on certain styles of beers, reflecting a harmonious marriage of flavour profiles and atmospheric conditions?
+Having unraveled the preliminary layers of our investigation into the impact of climate trends on beer reviews, we now pivot our analytical lens towards the intricate world of beer types. The initial exploration revealed how overall, taste, aroma, appearance, and palate ratings are influenced by varying climatic conditions. However, understanding the nuanced relationship between climate and beer preference necessitates a deeper dive into the categories of beers. Do users from certain climates thrive on certain styles of beers?
 
 ### Making the beer type mapping
 
@@ -165,7 +165,16 @@ Although these are only small varibilites, we chose to investigate these with th
 
 ADD WORD CLOUD THAT CHARACTERISE THESE BEERS?
 
-In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer style rankings don't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preference is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.  
+In summary, the ratings given to the beer styles between the various climates are significantly different. But, the ratings of the beer styles for the different climate factors are very similar. Therefore, the beer style rankings don't seem to be affected by the climate. This can make us think that there is a different appreciation of the beers in general (ie. higher or lower ratings for all beer styles), but the order of their preference is the same. We therefore need to find a new parameter to investigate that could clarify the difference in ratings given to the various beers.
+
+One of the potential explanation for this is linked with the fact that the chosen general types regroup many different kind of beers in one. We decided to investigate the different statistics linked with the beers and to see if some had a big variation inside of each type. The one that came on top was the alcohol by volume (ABV) as one can see in the following plot.
+
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_styles.png?raw=true" width="800" title="Horizontal boxplot of the ABV per beer style">
+</p>
+
+It appears that the ABV varies a lot even inside of each beer style. This could explain why the orders of the beer styles are the same between the climates but the ratings are different. Indeed, the ABV could be a parameter that is more important than the beer style itself. We therefore decided to investigate the ABV and its relation to the ratings given to the beers.
 
 ## 🍻 Climate and Alcohol Level of Beers
 
@@ -181,11 +190,6 @@ In order to do so, let’s study the ABV (alcohol by volume) rating for each bee
 </p>
 
 As shown on the boxplot, the rated beers are centered around a mean ABV of 7.00, and half are contained in the [5.4;8.0] range. We want to know how this distribution differs in the different climate categories. When testing the difference in mean ABV for each climate, the results are not significant. Therefore, we group the beers by general beer type and climate. This uses the same mapping as before.
-
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_styles.png?raw=true" width="800" title="Horizontal boxplot of the ABV per beer style">
-</p>
 
 INTERPRETATION
 
