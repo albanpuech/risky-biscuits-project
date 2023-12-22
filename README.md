@@ -18,9 +18,10 @@ If climate makes us different there is for sure something that we all share: our
 In order to answer this enigmatic question we need data! Luckily, people around the world have been rating beers for a long time on websites like Beer Advocate or Rate Beer. 
 
 <p align="center">
-  <img src="https://cdn.beeradvocate.com/im/meta/beeradvocate-meta-respect-beer-logo.png" width="100"> 
-    <img src="https://www.ratebeer.com/images/logos/login-logo.png" width="100">
+  <img src="https://cdn.beeradvocate.com/im/meta/beeradvocate-meta-respect-beer-logo.png" width="100" style="margin-right: 100px;"> 
+  <img src="https://www.ratebeer.com/images/logos/login-logo.png" width="100">
 </p>
+
 
 From these platforms, we gathered 1.6M reviews from 22.8K American users evaluating 134 different beers ([dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF)). 
 A complete review looks like this:
@@ -242,7 +243,7 @@ Maybe the variability lies in the climate subgroups. To look into this, we compu
   </tr>
 </table>
 
- <br><br><br>
+ <br><br>
 
 <table style="border-collapse: collapse; border: 2px double black;">
   <tr>
@@ -378,9 +379,9 @@ It is to be noted that for the three next plots, the ranges of the colorbars are
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_scheme.png?raw=true" height="300"> 
 </p>
 
-The resulting plots show a smaller ABV for the users living in a dry climate than for the ones living in a temperate or in continental climates. This is true for both the best beers and the most reviewed beers. 
+The resulting plots show a smaller ABV for the users living in a dry climate than for the ones living in temperate or continental climates. This is true for both the best beers and the most reviewed beers. 
 
-This seems counterintuitive as one could think people living in a colder climate drink beers that are lighter and not too alcoholic to create a warming sensation, whereas in a dry climate they drink beers with a higher ABV to provide a sensation of coziness. But an important point to be noted is that in our dataset, the only climate considered to be dry is a cold semi-arid climate, it does not opposite itself with the next analysis.
+This seems counterintuitive as one could think people living in a colder climate drink beers that are lighter and not too alcoholic to create a warming sensation, whereas in a dry climate they drink beers with a higher ABV to provide a sensation of coziness. This is, in fact, not the case here as the only climate we have that is in the dry scheme is the BSk climate which is a cold climate.
 
 
 <p align="center">
@@ -392,28 +393,27 @@ For the seasonal precipitation groups, the best beers have a higher ABV in locat
 
 One could assume that beers with less alcohol are more appreciated in dry season because they are more refreshing. However, this is not true for the most reviewed beers. 
 
-These results could be mitigated by some confounders, mostly one can notice that the separation is East-West and there are way more reviews on the East coast than on the West coast. This could be due to the fact that the East coast is more populated than the West coast. Therefore, we cannot conclude that the climate is the only factor that influences the ABV of the beers.
+These results could be mitigated by some confounders, mostly one can notice that the separation is East-West and there are way more reviews on the East Coast than on the West Coast. This could be due to the fact that the East Coast is more populated than the West Coast. Therefore, we cannot conclude that the climate is the only factor that influences the ABV of the beers.
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_temperature.png?raw=true" height="300"> 
 </p>
 
-Lastly, when observing the temperature of summer, the ABV consummed is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. The variation is also the biggest among the different climate categories.
+Lastly, when observing the temperature of summer, the ABV consumed is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. The variation is also the biggest among the different climate categories.
 
 
 
 ### Analysis of ABV
 
-In all cases, we can notice that there is a small difference in ABV means. The typical differences is around 0.1° and the highest variation for one chosen climate category is when we compare hot and cold summer. 
+In all cases, we can notice that there is a small difference in ABV means. The typical difference is around 0.1° and the highest variation for one chosen climate category is when we compare hot and cold summer. 
 
-The first main result we find is that U.S. citizens prefer beers with higher ABV compared to the most drank beers. This is true for all climate categories. Indeed, in the cases of the best beers, their average ABV was always above the global mean of 7°.
+The first main result we find is that U.S. citizens prefer beers with higher ABV compared to the most consumed beers. This is true for all climate categories. Indeed, in the case of the best beers, their average ABV was always above the global mean of 7°.
 
-Then, we find that the ABV is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. This could seem opposite to the conclusions of the study by the University of Pittsburgh. However, we have to keep in mind that we are not studying the alcohol consumption but rather the alcohol level of the beers. Therefore, this could mean that people living in colder climates drink more beers but with a lower ABV.
+Then, we find that the ABV is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. This could seem to be in contradiction with the conclusions of the study by the University of Pittsburgh. However, we have to keep in mind that we are not studying alcohol consumption but rather the alcohol level of the beers. Therefore, this could mean that people living in colder climates drink more beers but with a lower ABV.
 
 # Conclusion
 
-In conclusion, our exploration into the nexus of climate trends and beer preferences has revealed nuanced findings that paint a portrait of both regional distinctions and overarching similarities in the discernment of enthusiasts. While discernible differences in beer ratings across climates were noted, the overall trends remained remarkably consistent, suggesting a shared American identity that transcends geographical variations in climate. It appears that, irrespective of whether Americans reside in colder or warmer climates, certain preferences in beer evaluation persist, hinting at a cultural underpinning that unites beer enthusiasts across the nation.
+In conclusion, our exploration of the influence of climate on beer preference and popularity across the US reveals nuanced findings. While we found small differences in beer ratings across climates, the overall trends remained remarkably consistent, suggesting a shared American identity that transcends geographical variations in climate. It appears that, irrespective of whether Americans live in colder or warmer climates, certain preferences in beer evaluation persist, hinting at a cultural bias that unites beer enthusiasts across the nation.
 
-Furthermore, our investigation into ABV levels presented intriguing correlations with climate. In regions characterized by hotter summers, where higher ABV beers prevail whilst ndividuals in colder climates may indeed consume more beers, but these beverages tend to exhibit lower ABV levels. However, it is important to acknowledge potential confounding factors like economic factors and supplier-driven influences that may have influenced our observations. Indeed, financial factors could impact both the quantity and quality of beer consumption which could also be impact by the types of beers available in different regions. In essence, while our current findings offer interesting insights, further investigations of these potential confounders would enhance the depth of our understanding of the intricate interplay between climate, beer preferences, and the myriad factors that shape consumer behavior.
-
+Furthermore, our investigation into ABV levels presented intriguing correlations with climate. In regions characterized by hotter summers, reviewers rather drink higher ABV beers whilst individuals in colder climates may indeed consume more beers, but these beverages tend to exhibit lower ABV levels. However, it is important to acknowledge potential confounding factors like economic factors and supplier-driven influences that may have influenced our observations. Indeed, financial factors could impact both the quantity and quality of beer consumption which would also depend on the types of beers available in different regions. In essence, while our current findings offer interesting insights, further investigations of these potential confounders would enhance the depth of our understanding of the intricate interplay between climate and beer preferences.
