@@ -173,6 +173,14 @@ Hot and warm summers show very similar average scores. There is however a much l
 
 🍺 The appearance score was the most stable one across the different climate regions, maybe because it is also the hardest criterion to rate, as opposed to the palate and the taste that may have a larger impact on people's beer appreciation. 
 
+## 🍻 Climate and beer attributes
+
+Since there are variabilities between the scores given by the different climates, we would like to know how much the attributes differ in the reviews written. For this, we'll study the textual reviews and look for adjectives that stand out for each climate. The word cloud is made from this with each adjective having a size related to its frequency of use and its particularity (if its unique or not).
+
+WORD CLOUD HERE
+
+Analysis of clouds + conclusion
+
 ## 🍻 Climate and styles of beers 
 
 Having unraveled the preliminary layers of our investigation into the impact of climate trends on beer reviews, we now pivot our analytical lens toward the world of beer types. 
