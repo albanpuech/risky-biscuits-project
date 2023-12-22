@@ -116,10 +116,6 @@ It appears that the different climates are imbalanced with respect to the number
 
 In this part, we regroup the climate zones based on their scheme, seasonal precipitation, and summer heat level as specified in the Köppen climate classification as shown in the introduction. 
 
-
-#TODO : add Number of ratings per scheme...
-
-
 The means of the different scores are shown in the figures below:
 
 
@@ -173,21 +169,6 @@ Hot and warm summers show very similar average scores. There is however a much l
 
 🍺 The appearance score was the most stable one across the different climate regions, maybe because it is also the hardest criterion to rate, as opposed to the palate and the taste that may have a larger impact on people's beer appreciation. 
 
-## 🍻 Climate and reviews attributes
-
-Since there are variabilities between the scores given by the different climates, we would like to know how much the attributes differ in the reviews written. For this, we'll study the textual reviews and look for adjectives that stand out for each climate. The word cloud is made from this with each adjective having a size related to its frequency of use and its particularity (if its unique or not).
-
-WORD CLOUD HERE
-
-Analysis of clouds + conclusion
-
-TO CHECK AT THE END:
-
-### Conclusion on climate and reviews
-
-🍺 As we have seen, the polarity and subjectivity do not vary much across climates. This means that the reviews are rather similar across climates.
-
-🍺 The use of adjective though is different across climates. This could be due to the fact that people in different climates have different expectations of beers. To understand better if this is the case and try to comprehend how these expectations vary, we will now look at the appreciation fo beer styles across climates.
 
 ## 🍻 Climate and styles of beers 
 
@@ -491,6 +472,51 @@ Lastly, when observing the temperature of summer, the ABV consumed is higher in 
 🍺 The first main result we find is that U.S. citizens prefer beers with higher ABV than the average ABV of the most consumed ones. This is true for all climate categories. Indeed, in the case of the best beers, their average ABV was always above the global mean of 7°. On the other hand, the most consumed beers have a smaller ABV than the global average.
 
 🍺 Then, we find that the ABV is higher in regions with a hot summer than in those with a cold summer. This is true for both the best beers and the most reviewed beers. This could seem to be in contradiction with the conclusions of the study by the University of Pittsburgh. However, we have to keep in mind that we are not studying alcohol consumption but rather the alcohol level of the beers. Therefore, this could mean that people living in colder climates drink more beers but with a lower ABV. 
+
+
+## 🍻 Climate and textual reviews
+### Extracting beer preferences from text
+
+We have seen that there were differences in ABV means across climates, especially when comparing climates with hot summer with those with cold summers. Does the fact that stronger beers have higher scores in hot summer areas appear in the textual review? In other words, could we extract anything from the reviews that would suggest that people from warmer areas prefer and also buy more beers that have a higher alcohol volume?
+
+In order to answer this question, we will look for adjectives that stand out in the textual reviews of users living in each climate. Our workflow is the following:
+
+We first extract all the adjectives from the textual reviews following the traditional nlp pipeline, and compute their TF-IDF, considering all the reviews from a given climate as a unique document.
+
+We then display the adjectives with the largest TF-IDF in the following word-clouds, where adjectives having a larger TF-IDF are represented with a larger font size:
+
+
+<p align="center">
+  <br>
+  <img src="assets/img/tf_idf_wordcloud.png" width="600"> 
+</p>
+
+We can also look at the TF-IDF directly on the following plots:
+
+
+<p align="center">
+  <br>
+  <img src="assets/img/TF-IDF.png" width="600"> 
+</p>
+
+We can make a few observations. The two cold summer climates, Dfc and Dsc, show a larger TF-IDF for the "light" adjective. On the opposite, the TF-IDF of the adjective "sweet" is larger than the one of the adjective "light" for two of the 3 climates that have hot summers, namely, "Cfa" and "Dfa". This is consistent with our previous assumption that people living in locations with warmer summers seem to prefer strong, high ABV beers over light beers.
+
+The words having the largest TF-IDF are very similar across the different climates. This makes sense because these are very commonly used adjectives to describe beverages, that are widely used amongst all english speakers.
+
+There are a few words like "bitter", "sour", "smooth", "thin", "floral", "creamy" which TF-IDF varies much more across climates. This can reveal what people from different climatic regions are looking for in beers, but could also just reflect cultural and linguistic differences across the different parts of the US.
+
+### Review Polarity
+
+Another cultural difference that we could observe is the polarity of the textual review.  The polarity measures the positivity, negativity, or neutrality of sentiment in review. The score ranges from -1 (very negative) to 1 (very positive)
+
+
+
+
+### Conclusion on climate and reviews
+
+🍺 As we have seen, the polarity and subjectivity do not vary much across climates. This means that the reviews are rather similar across climates.
+
+🍺 The use of adjective though is different across climates. This could be due to the fact that people in different climates have different expectations of beers, but above all because they don't. 
 
 ## 🍻 Conclusion
 
