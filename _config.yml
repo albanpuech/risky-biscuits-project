@@ -2,7 +2,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Cheers to Latitude; A Journey Through Climate and Beer Preferences
-description: ADA Project of the RiskyBiscuits team
+description: ADA Project of the RiskyBiscuits Team
 show_downloads: False
 navigation:
   - title: Home
