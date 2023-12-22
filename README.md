@@ -101,6 +101,33 @@ In this part, we regroup the climate zones based on their scheme, seasonal preci
 
 Dry climates show smaller average overall, aroma, taste and palate scores than the other climates. However, the appearance scores are much more similar across temperate, continental and dry climates.
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Images Side by Side</title>
+  <style>
+    .image-container {
+      display: flex; /* Use flexbox for layout */
+    }
+
+    .image-container img {
+      width: 50%; /* Make each image take up 50% of the container width */
+      height: auto; /* Maintain the aspect ratio of the images */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_scheme.png?raw=true" height="300">
+    <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_preci.png?raw=true" height="300">
+    <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_temp.png?raw=true" height="300">
+  </div>
+
+</body>
+</html>
+
+<br></br>
 
 <p align="center">
   <br>
