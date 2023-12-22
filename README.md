@@ -120,17 +120,22 @@ The means of the different scores are shown in the figures below:
 
 
 
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_scheme.png?raw=true" height="300">
+</p>
+
+<br>
 
   <div class="image-container">
-    <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_scheme.png?raw=true" height="300">
     <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_preci.png?raw=true" height="300">
     <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/avg_score_temp.png?raw=true" height="300">
   </div>
-  <br>
+
+<br>
 
 
-
-Looking at the first figure on the left, dry climates show smaller average overall, aroma, taste and palate scores than the other climates. However, the appearance scores are much more similar across temperate, continental and dry climates.
+Looking at the first figure, dry climates show smaller average overall, aroma, taste and palate scores than the other climates. However, the appearance scores are much more similar across temperate, continental and dry climates.
 
 
 <!-- <p align="center">
@@ -139,7 +144,7 @@ Looking at the first figure on the left, dry climates show smaller average overa
 </p>
 </p> -->
 
-On the second figure, the average scores stay rather constant across climates. The overall score is larger in the dry climates, while the taste, palate, aroma and appearance are larger in climate zones that don't have dry seasons. 
+Looking at the climate precipitation, the average scores stay rather constant across climates. The overall score is larger in the dry climates, while the taste, palate, aroma and appearance are larger in climate zones that don't have dry seasons. 
 
 
 
@@ -194,6 +199,7 @@ Now, let's take a look at the mean overall score given to each beer by the respe
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/beer_type_average_ratings_per_climate.png?raw=true" max-height="600" title="Overall beer rankings per beer style as a function of the climate">   
 </p>
+
 
 For each climate, there exists a statistically significant difference between the overall score of the various beer styles, leading us to think that people from certain climates prefer certain beer styles. We then looked at how the mean overall score changed across climates, for each beer style. On this plot, we've added the micro average, i.e. the overall mean over the climates.
 
