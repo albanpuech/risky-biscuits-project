@@ -45,17 +45,17 @@ A complete review looks like this:
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/ex_review.png?raw=true" width="600">
 </p>
 
-A review on *Beer Advocate* contains the following information:
-- The **name** of the beer.
-- The **style** of the beer.
-- The **alcohol** by volume.
-- The **name** of the breweries and its location.
-- The **username** of the author and its location.
-- A **rating** indicated in red, that ranges from 1 to 5.
-- The relative difference, denoted **rDev**, between the rating given by the user and the average rating of the beer considering all reviews it received.
-- A list of 5 scores: **look**, **smell**, **taste**, **feel**, and **overall**.  These also range from 1 to 5. Note that the **rating** is not directly obtained from these, nor is the "overall" related to the other scores.
-- The **text** of the review.
-- The **date** and **hour** when the review was posted.
+A review on *Beer Advocate* contains the following information:\
+🍺 The **name** of the beer.\
+🍺 The **style** of the beer.\
+🍺 The **alcohol** by volume.\
+🍺 The **name** of its brewery and its location.\
+🍺 The **username** of the author and its location.\
+🍺 A **rating** indicated in red, that ranges from 1 to 5.\
+🍺 The relative difference, denoted **rDev**, between the rating given by the user and the average rating of the beer considering all reviews it received.\
+🍺 A list of 5 scores: **look**, **smell**, **taste**, **feel**, and **overall**.  These also range from 1 to 5. Note that the **rating** is not directly obtained from these, nor is the "overall" related to the other scores.\
+🍺 The **text** of the review.\
+🍺 The **date** and **hour** when the review was posted.
 
 We work with all the review features except the **rating** and **rDev** ones as these are not available on *Rate Beer*
 
@@ -179,23 +179,26 @@ Having unraveled the preliminary layers of our investigation into the impact of 
 
 The initial exploration revealed how overall, taste, aroma, appearance, and palate ratings are influenced by climatic conditions. However, understanding the nuanced relationship between climate and beer preference requires a deeper look into the styles of beers. Do users from certain climates have preferences for certain beers?
 
-There exist a lot of beer styles. In our dataset only, there were 104 of them. To have a more meaningful analysis we mapped them to 10 general styles. The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale. Here is a visualization of the style's ranking :
-
-<p align="center">
-  <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/styles_beer.png?raw=true" height="300" title="Distribution of the number of reviews for the beers having an average rating of more than 4">
-</p>
+There exist a lot of beer styles. In our dataset only, there were 104 of them. To have a more meaningful analysis we mapped them to 10 general styles. The ten styles are: Lager, Pale Ale, Blonde Ale, Brown Ale, IPA, Wheat beer, Porter, Stout, Sour Ale, Scottish Ale. 
 
 *Fun fact*: This mapping was performed manually following an article by EHL (https://hospitalityinsights.ehl.edu/beer-types). 👍
 
-First, let's take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added the micro average, i.e. the overall mean over the climates.
+Here is a visualization of the style's ranking:
+
+<p align="center">
+  <br>
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/styles_beer.png?raw=true" height="300">
+</p>
+The size of each of the style names is proportional to their average overall score. A style appearing in a larger font size is therefore preferred over the ones shown in smaller sizes.
+<br><br>
+Now, let's take a look at the overall ratings given to each beer by the respective climates. On this plot, we've added the micro average, i.e. the overall mean over the climates.
 
 <p align="center">
   <br>
   <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/beer_type_average_ratings.png?raw=true" max-height="600" title="Overall beer rankings per beer style as a function of the climate">   
 </p>
 
-There are indeed significant variabilities between the overall score of the various beer styles by the different climates, leading us to think that people from certain climates prefer certain beer styles. However, when ranking the best beers per climate group, we could immediately notice that there is very little variability between the climate groups. 
+For each climate, there exists a statistically significant difference between the overall score of the various beer styles, leading us to think that people from certain climates prefer certain beer styles. However, when ranking the best beers per climate group, we could immediately notice that there is very little variability between the climate groups. 
 
 Maybe the variability lies in the climate subgroups. To look into this, we computed the best ranked, i.e. best average overall rating, and the most popular, i.e. most reviewed, beers per climate subgroup. Here are the results :
 
