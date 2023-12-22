@@ -437,7 +437,7 @@ First, we compare the popularity and preference of the beers in the different cl
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_climate.png?raw=true" height="300"> 
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_climate.png?raw=true" width="700"> 
 </p>
 
 By looking at the two U.S. maps above, we can see that there is a variation in the **ABV** average between the best beers and the most reviewed beers. It results that the **ABV** mean of the three favorite beers is higher than the one of the three most popular ones. We can observe a variation across the climates but again, too many climates at a time make the results hard to interpret. The one-way test reveals that the differences in means are not statistically significant. We will therefore analyze the three climate levels separately.
@@ -446,7 +446,7 @@ Note that for the three next plots, the ranges of the color bars are not equal o
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_scheme.png?raw=true" height="300"> 
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_scheme.png?raw=true" width="700"> 
 </p>
 
 The resulting plots show a smaller **ABV** for the users living in a **dry climate** than for the ones living in **temperate** or **continental climates**. This is true for both the best beers and the most reviewed beers, and both results are statistically significant.
@@ -457,7 +457,7 @@ Let's now look at the precipitation:
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_precipitation.png?raw=true" height="300"> 
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_precipitation.png?raw=true" width="700"> 
 </p>
 
 For the **seasonal precipitation** groups, the best beers have a higher **ABV** in locations **without a dry season** than in those with (this result is statistically significant). In contrast, we can notice that, for the most reviewed beers, there is an increase in **ABV** for regions **with dry seasons**, but the difference is not as large as for the best beers and is not statistically significant.
@@ -468,7 +468,7 @@ We finally look at the temperature:
 
 <p align="center">
   <br>
-  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_temperature.png?raw=true" height="300"> 
+  <img src="https://github.com/albanpuech/risky-biscuits-project/blob/master/assets/img/abv_map_temperature.png?raw=true" width="700"> 
 </p>
 
 Lastly, when observing the temperature of summer, the **ABV** is higher in regions with a **hot summer** than in those with a **cold summer**. This is true for both the best beers and the most reviewed beers. The variation is also the biggest among the different climate categories and is statistically significant.
@@ -500,7 +500,7 @@ We then display the adjectives with the largest **TF-IDF** in the following word
 
 <p align="center">
   <br>
-  <img src="assets/img/tf_idf_wordcloud.png" width="600"> 
+  <img src="assets/img/tf_idf_wordcloud.png" width="700"> 
 </p>
 
 <!-- We can also look at the TF-IDF directly on the following plots:
@@ -525,7 +525,7 @@ We plot the **polarity** distribution below:
 
 <p align="center">
   <br>
-  <img src="assets/img/polarity.png" width="600"> 
+  <img src="assets/img/polarity.png" width="800"> 
 </p>
 
 
@@ -534,7 +534,7 @@ What we observe is that the **polarity** distribution is very similar across all
 We can also look at the **subjectivity** distribution:
 <p align="center">
   <br>
-  <img src="assets/img/subjectivity.png" width="600"> 
+  <img src="assets/img/subjectivity.png" width="800"> 
 </p>
 
 Again, the **subjectivity** is almost the same across climates.
