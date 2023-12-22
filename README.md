@@ -114,7 +114,7 @@ It appears that the different climates are imbalanced with respect to the number
 
 ### Climate factors and beers
 
-In this part, we regroup the climate zones based on their scheme, seasonal precipitation, and summer heat level as specified in the Köppen climate classification as shown in the introduction. 
+In this part, we group the climate zones based on their scheme, seasonal precipitation, and summer heat level as specified in the Köppen climate classification as shown in the introduction. 
 
 The means of the different scores are shown in the figures below:
 
@@ -491,13 +491,13 @@ We then display the adjectives with the largest TF-IDF in the following word-clo
   <img src="assets/img/tf_idf_wordcloud.png" width="600"> 
 </p>
 
-We can also look at the TF-IDF directly on the following plots:
+<!-- We can also look at the TF-IDF directly on the following plots:
 
 
 <p align="center">
   <br>
   <img src="assets/img/TF-IDF.png" width="600"> 
-</p>
+</p> -->
 
 We can make a few observations. The two cold summer climates, Dfc and Dsc, show a larger TF-IDF for the "light" adjective. On the opposite, the TF-IDF of the adjective "sweet" is larger than the one of the adjective "light" for two of the 3 climates that have hot summers, namely, "Cfa" and "Dfa". This is consistent with our previous assumption that people living in locations with warmer summers seem to prefer strong, high ABV beers over light beers.
 
