@@ -551,7 +551,7 @@ In conclusion, our exploration of the influence of climate on beer preference an
 
 Furthermore, our investigation into **ABV** levels presented intriguing correlations with climate. In regions characterized by **hotter summers**, reviewers rather drink higher **ABV** beers whilst individuals in **colder climates** may indeed consume more beers (as shown by [this paper](https://dom.pitt.edu/people-drink-more-in-colder-regions-bataller-led-study-finds/)), but these beverages tend to exhibit lower **ABV** levels. 
 
-However, it is important to acknowledge potential confounding factors like economic factors and varying local supply of beers that may have influenced our observations. Indeed, financial factors could impact both the quantity and quality of beer consumption which would also depend on the types of beers available in different regions. 
+However, it is important to acknowledge potential biases like economic factors and varying local supply of beers that may have influenced our observations. Indeed, financial factors could impact both the quantity and quality of beer consumption which would also depend on the types of beers available in different regions. 
 
 In essence, while our current findings offer interesting insights, further investigations of these potential confounders would enhance the depth of our understanding of the intricate interplay between climate and beer preferences.
 
@@ -561,9 +561,9 @@ In essence, while our current findings offer interesting insights, further inves
   <img src="assets/img/team.png" width="600"> 
 </p>
 
-Marin, our Sour Ale character, showing us his citrus-like characteristics with ...
+<!-- Marin, our Sour Ale character, showing us his citrus-like characteristics with ...
 Alban, with his bittersweet personality he represents our Porter beer
 Meline ou IPA, with her lively and energetic personality he fully represent the hoppy c
-ra
+ra -->
 
 
