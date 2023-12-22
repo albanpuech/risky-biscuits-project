@@ -99,7 +99,7 @@ We can also look at the other scores:
 
 
 
-From these plots, we can see that each sub-rating follows the same trends. This means that if there is an influence of climate on the scores, its impact is rather the same across all score categories. This is less the case for the appearance score, which stays rather constant across all climates.
+From these plots, we can see that each sub-rating follows the  trends. This means that if there is an influence of climate on the scores, its impact is rather the same across all score categories. This is less the case for the appearance score, which stays rather constant across all climates.
 
 Keeping in mind that the y-axis does not start at zero on these plots, we still observe a difference of around 4 percent in the mean overall score across climates. Indeed, a few climates show very low average scores, while others show very high ones. This is the case of Csa and Dfa. These climates have a hot summer which might make the users more inclined to appreciate beers in general because of the social aspect and their appreciation for a cold drink on a hot summer day. On the other hand, Dsb and Dsc climates give ratings under the averages. Both of these are continental and Dsc has a cold summer. Would it then be the case that people living in colder climates have higher beer expectations and standards?
 
@@ -507,16 +507,31 @@ There are a few words like "bitter", "sour", "smooth", "thin", "floral", "creamy
 
 ### Review Polarity
 
-Another cultural difference that we could observe is the polarity of the textual review.  The polarity measures the positivity, negativity, or neutrality of sentiment in review. The score ranges from -1 (very negative) to 1 (very positive)
+Another cultural difference that we could observe is the polarity and the subjectivity of the textual review. The polarity measures the positivity, negativity, or neutrality of sentiment in review. The score ranges from -1 (very negative) to 1 (very positive). On the other hand, the subjectivity measures how subjective or opinionated the review is, and ranges from 0 (highly objective) to 1 (highly subjective). 
+
+We plot the polarity distribution below:
+
+<p align="center">
+  <br>
+  <img src="assets/img/polarity.png" width="600"> 
+</p>
 
 
+What we observe is that the polarity distribution is very similar across all climates. The median and quartiles have almost the same values. This observation also holds when looking at the different climate groups (temperature, precipitation, and scheme). 
 
+We can also look at the subjectivity distribution:
+<p align="center">
+  <br>
+  <img src="assets/img/subjectivity.png" width="600"> 
+</p>
+
+Again, the polarity is almost the same across climates.
 
 ### Conclusion on climate and reviews
 
 🍺 As we have seen, the polarity and subjectivity do not vary much across climates. This means that the reviews are rather similar across climates.
 
-🍺 The use of adjective though is different across climates. This could be due to the fact that people in different climates have different expectations of beers, but above all because they don't. 
+🍺 A few adjectives have different TF-IDF across climates. This could be due to the fact that people in different climates have different expectations of beers, and different way of expressing themselves. 
 
 ## 🍻 Conclusion
 
