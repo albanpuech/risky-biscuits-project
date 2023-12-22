@@ -561,9 +561,14 @@ In essence, while our current findings offer interesting insights, further inves
   <img src="assets/img/team.png" width="600"> 
 </p>
 
-<!-- Marin, our Sour Ale character, showing us his citrus-like characteristics with ...
-Alban, with his bittersweet personality he represents our Porter beer
-Meline ou IPA, with her lively and energetic personality he fully represent the hoppy c
-ra -->
+**Meline**: our **IPA**, with her lively and energetic personality, she fully expresses the hoppy bitter character of this beer 🍻 ☀️
+
+**Marin**: Our **Sour Ale** character, with his dynamic, effervescent, and intriguing personality, he is the perfect reproduction in person of this fruity beer. 🍻 🍋
+
+**Alban**: With his bittersweet and intense look, he totally reflects the contrast between the sweet and bitter flavors of a smooth and velvety **Stout beer**.🍻👀
+
+**Barbara**: the **Brown Ale** character: warm, grounded and reliable, perfectly earthy and nature balanced as this beer. 🍻⚖️
+
+**Emilie**: capable of bringing with elegance to the present the old traditions and creating an atmosphere of comfort, exactly how **Porter** beers do with their malty and robust hearty flavor. 🍻⌛
 
 
